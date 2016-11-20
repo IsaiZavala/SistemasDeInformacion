@@ -1,0 +1,96 @@
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\SistemaHospital.dll.config
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\SistemaHospital.dll
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\SistemaHospital.pdb
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.Core.dll
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\EntityFramework.dll
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\EntityFramework.SqlServer.dll
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\IBatisNet.Common.dll
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\IBatisNet.DataMapper.dll
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\System.Net.Http.dll
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\System.Net.Http.WebRequest.dll
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\System.Web.Providers.dll
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\System.Net.Http.xml
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\System.Net.Http.WebRequest.xml
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\EntityFramework.xml
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\EntityFramework.SqlServer.xml
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\System.Web.Providers.xml
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.Core.xml
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\es\EntityFramework.resources.dll
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.dll
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.pdb
+C:\Users\Lenovo\Desktop\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\MySql.Data.dll
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\SistemaHospital.dll.config
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\SistemaHospital.dll
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\SistemaHospital.pdb
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\MySql.Data.dll
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\System.Net.Http.dll
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\System.Net.Http.WebRequest.dll
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\System.Net.Http.xml
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\System.Net.Http.WebRequest.xml
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\EntityFramework.xml
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\EntityFramework.SqlServer.xml
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\System.Web.Providers.xml
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.Core.xml
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\es\System.Net.Http.resources.dll
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\es\System.Net.Http.WebRequest.resources.dll
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\es\EntityFramework.resources.dll
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.dll
+C:\Users\Lenovo\Dropbox\Compartidas\Sistemas de informacion\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.pdb
+C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\bin\SistemaHospital.dll.config
+C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\bin\SistemaHospital.dll
+C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\bin\SistemaHospital.pdb
+C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\bin\MySql.Data.dll
+C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\bin\EntityFramework.xml
+C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\bin\EntityFramework.SqlServer.xml
+C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\bin\System.Web.Providers.xml
+C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.Core.xml
+C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\bin\es\EntityFramework.resources.dll
+C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.csprojResolveAssemblyReference.cache
+C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.dll
+C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.pdb

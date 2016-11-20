@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSTratamientoReport" targetNamespace="http://tempuri.org/DSTratamientoReport.xsd" xmlns:mstns="http://tempuri.org/DSTratamientoReport.xsd" xmlns="http://tempuri.org/DSTratamientoReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSTratamientoReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSTratamientoReport" msprop:Generator_UserDSName="DSTratamientoReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TTratamiento" msprop:Generator_TableClassName="TTratamientoDataTable" msprop:Generator_TableVarName="tableTTratamiento" msprop:Generator_TablePropName="TTratamiento" msprop:Generator_RowDeletingName="TTratamientoRowDeleting" msprop:Generator_RowChangingName="TTratamientoRowChanging" msprop:Generator_RowEvHandlerName="TTratamientoRowChangeEventHandler" msprop:Generator_RowDeletedName="TTratamientoRowDeleted" msprop:Generator_UserTableName="TTratamiento" msprop:Generator_RowChangedName="TTratamientoRowChanged" msprop:Generator_RowEvArgName="TTratamientoRowChangeEvent" msprop:Generator_RowClassName="TTratamientoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdTratamiento" msprop:Generator_ColumnVarNameInTable="columnIdTratamiento" msprop:Generator_ColumnPropNameInRow="IdTratamiento" msprop:Generator_ColumnPropNameInTable="IdTratamientoColumn" msprop:Generator_UserColumnName="IdTratamiento" type="xs:int" minOccurs="0" />
+              <xs:element name="Enfermedad" msprop:Generator_ColumnVarNameInTable="columnEnfermedad" msprop:Generator_ColumnPropNameInRow="Enfermedad" msprop:Generator_ColumnPropNameInTable="EnfermedadColumn" msprop:Generator_UserColumnName="Enfermedad" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_UserColumnName="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Costo" msprop:Generator_ColumnVarNameInTable="columnCosto" msprop:Generator_ColumnPropNameInRow="Costo" msprop:Generator_ColumnPropNameInTable="CostoColumn" msprop:Generator_UserColumnName="Costo" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

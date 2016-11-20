@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSEstudioReport" targetNamespace="http://tempuri.org/DSEstudioReport.xsd" xmlns:mstns="http://tempuri.org/DSEstudioReport.xsd" xmlns="http://tempuri.org/DSEstudioReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSEstudioReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSEstudioReport" msprop:Generator_UserDSName="DSEstudioReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TEstudio" msprop:Generator_TableClassName="TEstudioDataTable" msprop:Generator_TableVarName="tableTEstudio" msprop:Generator_TablePropName="TEstudio" msprop:Generator_RowDeletingName="TEstudioRowDeleting" msprop:Generator_RowChangingName="TEstudioRowChanging" msprop:Generator_RowEvHandlerName="TEstudioRowChangeEventHandler" msprop:Generator_RowDeletedName="TEstudioRowDeleted" msprop:Generator_UserTableName="TEstudio" msprop:Generator_RowChangedName="TEstudioRowChanged" msprop:Generator_RowEvArgName="TEstudioRowChangeEvent" msprop:Generator_RowClassName="TEstudioRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdEstudio" msprop:Generator_ColumnVarNameInTable="columnIdEstudio" msprop:Generator_ColumnPropNameInRow="IdEstudio" msprop:Generator_ColumnPropNameInTable="IdEstudioColumn" msprop:Generator_UserColumnName="IdEstudio" type="xs:int" minOccurs="0" />
+              <xs:element name="Nombre_Estudio" msprop:Generator_ColumnVarNameInTable="columnNombre_Estudio" msprop:Generator_ColumnPropNameInRow="Nombre_Estudio" msprop:Generator_ColumnPropNameInTable="Nombre_EstudioColumn" msprop:Generator_UserColumnName="Nombre_Estudio" type="xs:string" minOccurs="0" />
+              <xs:element name="Costo" msprop:Generator_ColumnVarNameInTable="columnCosto" msprop:Generator_ColumnPropNameInRow="Costo" msprop:Generator_ColumnPropNameInTable="CostoColumn" msprop:Generator_UserColumnName="Costo" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
