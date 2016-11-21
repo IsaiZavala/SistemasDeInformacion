@@ -27,8 +27,6 @@ namespace SistemaHospital.Tools
                 rptDoc.Load(pathReport);
                 rptDoc.SetDataSource(dt);
 
-                string strFileName = FileName();
-
                 object []arrParams = GetParametersReport();
                 if (arrParams != null)
                 {
@@ -37,7 +35,8 @@ namespace SistemaHospital.Tools
                         rptDoc.SetParameterValue(itemParam[0].ToString(), itemParam[1]);
                     }
                 }
-                
+
+                string strFileName = FileName() + DateAndTimeString();
                 rptDoc.ExportToHttpResponse(ExportFormatType.PortableDocFormat, this.Response, true, strFileName);
             }
             catch
@@ -69,6 +68,11 @@ namespace SistemaHospital.Tools
         public virtual string FileName()
         {
             return string.Empty;
+        }
+
+        public string DateAndTimeString()
+        {
+            return DateTime.Now.ToString("yyyyMMdd_HHmmss");            
         }
 
         public virtual object[] GetParametersReport()
