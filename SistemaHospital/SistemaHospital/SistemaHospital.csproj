@@ -129,6 +129,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="WEB\Controls\ConsultaReport.ascx" />
+    <Content Include="WEB\Controls\ConsultasXEspecialidad.ascx" />
     <Content Include="WEB\Controls\EspecialidadReport.ascx" />
     <Content Include="WEB\Controls\EstudioReport.ascx" />
     <Content Include="WEB\Controls\InventoryReport.ascx" />
@@ -1218,6 +1219,17 @@
     <Content Include="WEB\Reports\XSD\DSConsultaReport.xss">
       <DependentUpon>DSConsultaReport.xsd</DependentUpon>
     </Content>
+    <Content Include="WEB\Reports\XSD\DSConsultasXEspecialidad.xsc">
+      <DependentUpon>DSConsultasXEspecialidad.xsd</DependentUpon>
+    </Content>
+    <None Include="WEB\Reports\XSD\DSConsultasXEspecialidad.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSConsultasXEspecialidad.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="WEB\Reports\XSD\DSConsultasXEspecialidad.xss">
+      <DependentUpon>DSConsultasXEspecialidad.xsd</DependentUpon>
+    </Content>
     <None Include="WEB\Reports\XSD\DSDoctorReport.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -1292,6 +1304,13 @@
     </Compile>
     <Compile Include="WEB\Controls\ConsultaReport.ascx.designer.cs">
       <DependentUpon>ConsultaReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Controls\ConsultasXEspecialidad.ascx.cs">
+      <DependentUpon>ConsultasXEspecialidad.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Controls\ConsultasXEspecialidad.ascx.designer.cs">
+      <DependentUpon>ConsultasXEspecialidad.ascx</DependentUpon>
     </Compile>
     <Compile Include="WEB\Controls\EspecialidadReport.ascx.cs">
       <DependentUpon>EspecialidadReport.ascx</DependentUpon>
@@ -1392,16 +1411,31 @@
       <DependentUpon>PacienteReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="WEB\Reports\TConsultasXEspecialidad.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TConsultasXEspecialidad.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="WEB\Reports\TratamientoReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TratamientoReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="WEB\Reports\XSD\DSConsultaReport.cs">
+      <DependentUpon>DSConsultaReport.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="WEB\Reports\XSD\DSConsultaReport.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DSConsultaReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Reports\XSD\DSConsultasXEspecialidad.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSConsultasXEspecialidad.xsd</DependentUpon>
     </Compile>
     <Compile Include="WEB\Reports\XSD\DSDoctorReport.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -1459,6 +1493,10 @@
     <EmbeddedResource Include="WEB\Reports\PacienteReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>PacienteReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WEB\Reports\TConsultasXEspecialidad.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TConsultasXEspecialidad.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="WEB\Reports\TratamientoReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
