@@ -94,26 +94,3 @@ C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHos
 C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.csprojResolveAssemblyReference.cache
 C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.dll
 C:\Users\LGerardo\Dropbox\Sistemas de informacion (1)\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.pdb
-C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\SistemaHospital.dll
-C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\SistemaHospital.pdb
-C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\MySql.Data.dll
-C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\Microsoft.Web.Infrastructure.xml
-C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\EntityFramework.xml
-C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\EntityFramework.SqlServer.xml
-C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\System.Web.Providers.xml
-C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.Core.xml
-C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.OAuth.xml
-C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.OAuth.Consumer.xml
-C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.OpenId.xml
-C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
-C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\DotNetOpenAuth.AspNet.xml
-C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\Microsoft.AspNet.Membership.OpenAuth.xml
-C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\Microsoft.AspNet.FriendlyUrls.xml
-C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\es\EntityFramework.resources.dll
-C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\es\EntityFramework.SqlServer.resources.dll
-C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
-C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
-C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.csprojResolveAssemblyReference.cache
-C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.dll
-C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.pdb

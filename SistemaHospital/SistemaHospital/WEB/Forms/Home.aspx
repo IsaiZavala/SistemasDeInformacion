@@ -6,6 +6,7 @@
 <%@ Register TagPrefix="UserControls" TagName="DoctorReport" Src="~/WEB/Controls/DoctorReport.ascx" %>
 <%@ Register TagPrefix="UserControls" TagName="TratamientoReport" Src="~/WEB/Controls/TratamientoReport.ascx" %>
 <%@ Register TagPrefix="UserControls" TagName="ConsultaReport" Src="~/WEB/Controls/ConsultaReport.ascx" %>
+<%@ Register TagPrefix="UserControls" TagName="ConsultasXEspecialidad" Src="~/WEB/Controls/ConsultasXEspecialidad.ascx" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     
@@ -31,5 +32,8 @@
     </div>
     <div id="divConsultaReport" class="box-body" style="display:block">
         <UserControls:ConsultaReport runat="server" ID="rptConsultaReport" />
+    </div>
+    <div id="divConsutlasXEspecialidad" class="box-body" style="display:block">
+        <UserControls:ConsultasXEspecialidad runat="server" ID="rptConsultasXEspecialidad" />
     </div>
 </asp:Content>

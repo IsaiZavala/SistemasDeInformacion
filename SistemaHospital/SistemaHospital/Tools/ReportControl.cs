@@ -39,7 +39,7 @@ namespace SistemaHospital.Tools
                 string strFileName = FileName() + DateAndTimeString();
                 rptDoc.ExportToHttpResponse(ExportFormatType.PortableDocFormat, this.Response, true, strFileName);
             }
-            catch
+            catch(Exception ex)
             {
                 throw;
             }

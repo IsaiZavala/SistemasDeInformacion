@@ -34,8 +34,8 @@ namespace SistemaHospital.WEB.Controls
             lstParameters.Add(new MySqlParameter("@fechaMax", MySqlDbType.Date));
 
             lstParameters[0].Value = !string.IsNullOrEmpty(cat_registros) ? cat_registros : "10"; // cantidad de registros
-            lstParameters[1].Value = !string.IsNullOrEmpty(cat_registros) ? cat_registros : "01/01/2000"; // cantidad de registros
-            lstParameters[2].Value = !string.IsNullOrEmpty(cat_registros) ? cat_registros : "01/01/2016"; // cantidad de registros
+            lstParameters[1].Value = !string.IsNullOrEmpty(cat_registros) ? cat_registros : "2000/01/01"; // cantidad de registros
+            lstParameters[2].Value = !string.IsNullOrEmpty(cat_registros) ? cat_registros : "2016/12/31"; // cantidad de registros
 
 
             return lstParameters.ToArray();
@@ -53,12 +53,12 @@ namespace SistemaHospital.WEB.Controls
 
         public override string ReportPath()
         {
-            return "~/WEB/Reports/ConsultasXEspecialidad.rpt";
+            return "~/WEB/Reports/TConsultasXEspecialidad.rpt";
         }
 
         public override string FileName()
         {
-            return "TConsultasXEspecialidad_";
+            return "ConsXEspecialidad_";
         }
     }
 }
