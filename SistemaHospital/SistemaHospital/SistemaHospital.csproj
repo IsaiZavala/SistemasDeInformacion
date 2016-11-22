@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -128,12 +129,14 @@
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="WEB\Controls\AvanceXEspecialidad.ascx" />
     <Content Include="WEB\Controls\ConsultaReport.ascx" />
     <Content Include="WEB\Controls\ConsultasXEspecialidad.ascx" />
     <Content Include="WEB\Controls\EspecialidadReport.ascx" />
     <Content Include="WEB\Controls\EstudioReport.ascx" />
     <Content Include="WEB\Controls\InventoryReport.ascx" />
     <Content Include="WEB\Controls\DoctorReport.ascx" />
+    <Content Include="WEB\Controls\MedicosXEspecialidad.ascx" />
     <Content Include="WEB\Controls\PacienteReport.ascx" />
     <Content Include="WEB\Controls\TratamientoReport.ascx" />
     <Content Include="WEB\Forms\Home.aspx" />
@@ -1211,6 +1214,17 @@
     <Content Include="WEB\Reports\XSD\DSConsultaReport.xsc">
       <DependentUpon>DSConsultaReport.xsd</DependentUpon>
     </Content>
+    <Content Include="WEB\Reports\XSD\AvanceConsultasXEspecialidad.xsc">
+      <DependentUpon>AvanceConsultasXEspecialidad.xsd</DependentUpon>
+    </Content>
+    <None Include="WEB\Reports\XSD\AvanceConsultasXEspecialidad.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvanceConsultasXEspecialidad.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="WEB\Reports\XSD\AvanceConsultasXEspecialidad.xss">
+      <DependentUpon>AvanceConsultasXEspecialidad.xsd</DependentUpon>
+    </Content>
     <None Include="WEB\Reports\XSD\DSConsultaReport.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -1287,6 +1301,28 @@
     <Content Include="WEB\Reports\XSD\DSTratamientoReport.xss">
       <DependentUpon>DSTratamientoReport.xsd</DependentUpon>
     </Content>
+    <Content Include="WEB\Reports\XSD\Hospital.xsc">
+      <DependentUpon>Hospital.xsd</DependentUpon>
+    </Content>
+    <None Include="WEB\Reports\XSD\Hospital.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hospital.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="WEB\Reports\XSD\Hospital.xss">
+      <DependentUpon>Hospital.xsd</DependentUpon>
+    </Content>
+    <Content Include="WEB\Reports\XSD\MedicosXEspecialidad.xsc">
+      <DependentUpon>MedicosXEspecialidad.xsd</DependentUpon>
+    </Content>
+    <None Include="WEB\Reports\XSD\MedicosXEspecialidad.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MedicosXEspecialidad.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="WEB\Reports\XSD\MedicosXEspecialidad.xss">
+      <DependentUpon>MedicosXEspecialidad.xsd</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\GenericBLL.cs" />
@@ -1298,6 +1334,13 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Tools\StoredProcedures.cs" />
+    <Compile Include="WEB\Controls\AvanceXEspecialidad.ascx.cs">
+      <DependentUpon>AvanceXEspecialidad.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Controls\AvanceXEspecialidad.ascx.designer.cs">
+      <DependentUpon>AvanceXEspecialidad.ascx</DependentUpon>
+    </Compile>
     <Compile Include="WEB\Controls\ConsultaReport.ascx.cs">
       <DependentUpon>ConsultaReport.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1340,6 +1383,13 @@
     <Compile Include="WEB\Controls\DoctorReport.ascx.designer.cs">
       <DependentUpon>DoctorReport.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WEB\Controls\MedicosXEspecialidad.ascx.cs">
+      <DependentUpon>MedicosXEspecialidad.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Controls\MedicosXEspecialidad.ascx.designer.cs">
+      <DependentUpon>MedicosXEspecialidad.ascx</DependentUpon>
+    </Compile>
     <Compile Include="WEB\Controls\PacienteReport.ascx.cs">
       <DependentUpon>PacienteReport.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1375,10 +1425,22 @@
     <Compile Include="WEB\Master\master.Master.designer.cs">
       <DependentUpon>master.Master</DependentUpon>
     </Compile>
+    <Compile Include="WEB\Reports\AvanceXespecialidad.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvanceXespecialidad.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="WEB\Reports\ConsultaReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ConsultaReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WEB\Reports\ConsultasXEspecialidad.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsultasXEspecialidad.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="WEB\Reports\DoctorReport.cs">
@@ -1405,16 +1467,16 @@
       <DependentUpon>InventoryReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="WEB\Reports\MedicosXEspecialidad.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MedicosXEspecialidad.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="WEB\Reports\PacienteReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PacienteReport.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="WEB\Reports\TConsultasXEspecialidad.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TConsultasXEspecialidad.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="WEB\Reports\TratamientoReport.cs">
@@ -1423,14 +1485,22 @@
       <DependentUpon>TratamientoReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="WEB\Reports\XSD\AvanceConsultasXEspecialidad.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvanceConsultasXEspecialidad.xsd</DependentUpon>
+    </Compile>
     <Compile Include="WEB\Reports\XSD\DSConsultaReport.cs">
       <DependentUpon>DSConsultaReport.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="WEB\Reports\XSD\DSConsultaReport.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DSConsultaReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Reports\XSD\DSConsultasXEspecialidad.cs">
+      <DependentUpon>DSConsultasXEspecialidad.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="WEB\Reports\XSD\DSConsultasXEspecialidad.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -1467,12 +1537,30 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSTratamientoReport.xsd</DependentUpon>
     </Compile>
+    <Compile Include="WEB\Reports\XSD\Hospital.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hospital.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Reports\XSD\MedicosXEspecialidad.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MedicosXEspecialidad.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <EmbeddedResource Include="WEB\Reports\AvanceXespecialidad.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AvanceXespecialidad.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="WEB\Reports\ConsultaReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ConsultaReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WEB\Reports\ConsultasXEspecialidad.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ConsultasXEspecialidad.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="WEB\Reports\DoctorReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -1490,13 +1578,13 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>InventoryReport.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="WEB\Reports\MedicosXEspecialidad.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MedicosXEspecialidad.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="WEB\Reports\PacienteReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>PacienteReport.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WEB\Reports\TConsultasXEspecialidad.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>TConsultasXEspecialidad.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="WEB\Reports\TratamientoReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

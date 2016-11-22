@@ -53,7 +53,7 @@ namespace SistemaHospital.WEB.Controls
 
         public override string ReportPath()
         {
-            return "~/WEB/Reports/TConsultasXEspecialidad.rpt";
+            return "~/WEB/Reports/ConsultasXEspecialidad.rpt";
         }
 
         public override string FileName()

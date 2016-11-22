@@ -20,17 +20,17 @@ namespace SistemaHospital.WEB.Reports.XSD {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DSConsultasXEspecialidad")]
+    [global::System.Xml.Serialization.XmlRootAttribute("AvanceConsultasXEspecialidad")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DSConsultasXEspecialidad : global::System.Data.DataSet {
+    public partial class AvanceConsultasXEspecialidad : global::System.Data.DataSet {
         
-        private TConsultasXEspecialidadDataTable tableTConsultasXEspecialidad;
+        private TAvanceConsultasDataTable tableTAvanceConsultas;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public DSConsultasXEspecialidad() {
+        public AvanceConsultasXEspecialidad() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace SistemaHospital.WEB.Reports.XSD {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected DSConsultasXEspecialidad(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected AvanceConsultasXEspecialidad(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace SistemaHospital.WEB.Reports.XSD {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["TConsultasXEspecialidad"] != null)) {
-                    base.Tables.Add(new TConsultasXEspecialidadDataTable(ds.Tables["TConsultasXEspecialidad"]));
+                if ((ds.Tables["TAvanceConsultas"] != null)) {
+                    base.Tables.Add(new TAvanceConsultasDataTable(ds.Tables["TAvanceConsultas"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace SistemaHospital.WEB.Reports.XSD {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public TConsultasXEspecialidadDataTable TConsultasXEspecialidad {
+        public TAvanceConsultasDataTable TAvanceConsultas {
             get {
-                return this.tableTConsultasXEspecialidad;
+                return this.tableTAvanceConsultas;
             }
         }
         
@@ -127,7 +127,7 @@ namespace SistemaHospital.WEB.Reports.XSD {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DSConsultasXEspecialidad cln = ((DSConsultasXEspecialidad)(base.Clone()));
+            AvanceConsultasXEspecialidad cln = ((AvanceConsultasXEspecialidad)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace SistemaHospital.WEB.Reports.XSD {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["TConsultasXEspecialidad"] != null)) {
-                    base.Tables.Add(new TConsultasXEspecialidadDataTable(ds.Tables["TConsultasXEspecialidad"]));
+                if ((ds.Tables["TAvanceConsultas"] != null)) {
+                    base.Tables.Add(new TAvanceConsultasDataTable(ds.Tables["TAvanceConsultas"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace SistemaHospital.WEB.Reports.XSD {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableTConsultasXEspecialidad = ((TConsultasXEspecialidadDataTable)(base.Tables["TConsultasXEspecialidad"]));
+            this.tableTAvanceConsultas = ((TAvanceConsultasDataTable)(base.Tables["TAvanceConsultas"]));
             if ((initTable == true)) {
-                if ((this.tableTConsultasXEspecialidad != null)) {
-                    this.tableTConsultasXEspecialidad.InitVars();
+                if ((this.tableTAvanceConsultas != null)) {
+                    this.tableTAvanceConsultas.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace SistemaHospital.WEB.Reports.XSD {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DSConsultasXEspecialidad";
+            this.DataSetName = "AvanceConsultasXEspecialidad";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DSConsultasXEspecialidad.xsd";
+            this.Namespace = "http://tempuri.org/AvanceConsultasXEspecialidad.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableTConsultasXEspecialidad = new TConsultasXEspecialidadDataTable();
-            base.Tables.Add(this.tableTConsultasXEspecialidad);
+            this.tableTAvanceConsultas = new TAvanceConsultasDataTable();
+            base.Tables.Add(this.tableTAvanceConsultas);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeTConsultasXEspecialidad() {
+        private bool ShouldSerializeTAvanceConsultas() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace SistemaHospital.WEB.Reports.XSD {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DSConsultasXEspecialidad ds = new DSConsultasXEspecialidad();
+            AvanceConsultasXEspecialidad ds = new AvanceConsultasXEspecialidad();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,23 +270,27 @@ namespace SistemaHospital.WEB.Reports.XSD {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void TConsultasXEspecialidadRowChangeEventHandler(object sender, TConsultasXEspecialidadRowChangeEvent e);
+        public delegate void TAvanceConsultasRowChangeEventHandler(object sender, TAvanceConsultasRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class TConsultasXEspecialidadDataTable : global::System.Data.TypedTableBase<TConsultasXEspecialidadRow> {
+        public partial class TAvanceConsultasDataTable : global::System.Data.TypedTableBase<TAvanceConsultasRow> {
             
-            private global::System.Data.DataColumn columnnombre_especialidad;
+            private global::System.Data.DataColumn columnespecialidad;
             
-            private global::System.Data.DataColumn columnConsultas;
+            private global::System.Data.DataColumn columnmes;
+            
+            private global::System.Data.DataColumn columncantidad;
+            
+            private global::System.Data.DataColumn columnidFecha;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public TConsultasXEspecialidadDataTable() {
-                this.TableName = "TConsultasXEspecialidad";
+            public TAvanceConsultasDataTable() {
+                this.TableName = "TAvanceConsultas";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -294,7 +298,7 @@ namespace SistemaHospital.WEB.Reports.XSD {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal TConsultasXEspecialidadDataTable(global::System.Data.DataTable table) {
+            internal TAvanceConsultasDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -311,24 +315,40 @@ namespace SistemaHospital.WEB.Reports.XSD {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected TConsultasXEspecialidadDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected TAvanceConsultasDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn nombre_especialidadColumn {
+            public global::System.Data.DataColumn especialidadColumn {
                 get {
-                    return this.columnnombre_especialidad;
+                    return this.columnespecialidad;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ConsultasColumn {
+            public global::System.Data.DataColumn mesColumn {
                 get {
-                    return this.columnConsultas;
+                    return this.columnmes;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn cantidadColumn {
+                get {
+                    return this.columncantidad;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn idFechaColumn {
+                get {
+                    return this.columnidFecha;
                 }
             }
             
@@ -343,46 +363,48 @@ namespace SistemaHospital.WEB.Reports.XSD {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public TConsultasXEspecialidadRow this[int index] {
+            public TAvanceConsultasRow this[int index] {
                 get {
-                    return ((TConsultasXEspecialidadRow)(this.Rows[index]));
+                    return ((TAvanceConsultasRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event TConsultasXEspecialidadRowChangeEventHandler TConsultasXEspecialidadRowChanging;
+            public event TAvanceConsultasRowChangeEventHandler TAvanceConsultasRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event TConsultasXEspecialidadRowChangeEventHandler TConsultasXEspecialidadRowChanged;
+            public event TAvanceConsultasRowChangeEventHandler TAvanceConsultasRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event TConsultasXEspecialidadRowChangeEventHandler TConsultasXEspecialidadRowDeleting;
+            public event TAvanceConsultasRowChangeEventHandler TAvanceConsultasRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event TConsultasXEspecialidadRowChangeEventHandler TConsultasXEspecialidadRowDeleted;
+            public event TAvanceConsultasRowChangeEventHandler TAvanceConsultasRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddTConsultasXEspecialidadRow(TConsultasXEspecialidadRow row) {
+            public void AddTAvanceConsultasRow(TAvanceConsultasRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public TConsultasXEspecialidadRow AddTConsultasXEspecialidadRow(string nombre_especialidad, long Consultas) {
-                TConsultasXEspecialidadRow rowTConsultasXEspecialidadRow = ((TConsultasXEspecialidadRow)(this.NewRow()));
+            public TAvanceConsultasRow AddTAvanceConsultasRow(string especialidad, string mes, long cantidad, string idFecha) {
+                TAvanceConsultasRow rowTAvanceConsultasRow = ((TAvanceConsultasRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        nombre_especialidad,
-                        Consultas};
-                rowTConsultasXEspecialidadRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowTConsultasXEspecialidadRow);
-                return rowTConsultasXEspecialidadRow;
+                        especialidad,
+                        mes,
+                        cantidad,
+                        idFecha};
+                rowTAvanceConsultasRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowTAvanceConsultasRow);
+                return rowTAvanceConsultasRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                TConsultasXEspecialidadDataTable cln = ((TConsultasXEspecialidadDataTable)(base.Clone()));
+                TAvanceConsultasDataTable cln = ((TAvanceConsultasDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -390,49 +412,55 @@ namespace SistemaHospital.WEB.Reports.XSD {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new TConsultasXEspecialidadDataTable();
+                return new TAvanceConsultasDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columnnombre_especialidad = base.Columns["nombre_especialidad"];
-                this.columnConsultas = base.Columns["Consultas"];
+                this.columnespecialidad = base.Columns["especialidad"];
+                this.columnmes = base.Columns["mes"];
+                this.columncantidad = base.Columns["cantidad"];
+                this.columnidFecha = base.Columns["idFecha"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnnombre_especialidad = new global::System.Data.DataColumn("nombre_especialidad", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnnombre_especialidad);
-                this.columnConsultas = new global::System.Data.DataColumn("Consultas", typeof(long), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnConsultas);
+                this.columnespecialidad = new global::System.Data.DataColumn("especialidad", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnespecialidad);
+                this.columnmes = new global::System.Data.DataColumn("mes", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmes);
+                this.columncantidad = new global::System.Data.DataColumn("cantidad", typeof(long), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncantidad);
+                this.columnidFecha = new global::System.Data.DataColumn("idFecha", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnidFecha);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public TConsultasXEspecialidadRow NewTConsultasXEspecialidadRow() {
-                return ((TConsultasXEspecialidadRow)(this.NewRow()));
+            public TAvanceConsultasRow NewTAvanceConsultasRow() {
+                return ((TAvanceConsultasRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new TConsultasXEspecialidadRow(builder);
+                return new TAvanceConsultasRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(TConsultasXEspecialidadRow);
+                return typeof(TAvanceConsultasRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.TConsultasXEspecialidadRowChanged != null)) {
-                    this.TConsultasXEspecialidadRowChanged(this, new TConsultasXEspecialidadRowChangeEvent(((TConsultasXEspecialidadRow)(e.Row)), e.Action));
+                if ((this.TAvanceConsultasRowChanged != null)) {
+                    this.TAvanceConsultasRowChanged(this, new TAvanceConsultasRowChangeEvent(((TAvanceConsultasRow)(e.Row)), e.Action));
                 }
             }
             
@@ -440,8 +468,8 @@ namespace SistemaHospital.WEB.Reports.XSD {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.TConsultasXEspecialidadRowChanging != null)) {
-                    this.TConsultasXEspecialidadRowChanging(this, new TConsultasXEspecialidadRowChangeEvent(((TConsultasXEspecialidadRow)(e.Row)), e.Action));
+                if ((this.TAvanceConsultasRowChanging != null)) {
+                    this.TAvanceConsultasRowChanging(this, new TAvanceConsultasRowChangeEvent(((TAvanceConsultasRow)(e.Row)), e.Action));
                 }
             }
             
@@ -449,8 +477,8 @@ namespace SistemaHospital.WEB.Reports.XSD {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.TConsultasXEspecialidadRowDeleted != null)) {
-                    this.TConsultasXEspecialidadRowDeleted(this, new TConsultasXEspecialidadRowChangeEvent(((TConsultasXEspecialidadRow)(e.Row)), e.Action));
+                if ((this.TAvanceConsultasRowDeleted != null)) {
+                    this.TAvanceConsultasRowDeleted(this, new TAvanceConsultasRowChangeEvent(((TAvanceConsultasRow)(e.Row)), e.Action));
                 }
             }
             
@@ -458,14 +486,14 @@ namespace SistemaHospital.WEB.Reports.XSD {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.TConsultasXEspecialidadRowDeleting != null)) {
-                    this.TConsultasXEspecialidadRowDeleting(this, new TConsultasXEspecialidadRowChangeEvent(((TConsultasXEspecialidadRow)(e.Row)), e.Action));
+                if ((this.TAvanceConsultasRowDeleting != null)) {
+                    this.TAvanceConsultasRowDeleting(this, new TAvanceConsultasRowChangeEvent(((TAvanceConsultasRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveTConsultasXEspecialidadRow(TConsultasXEspecialidadRow row) {
+            public void RemoveTAvanceConsultasRow(TAvanceConsultasRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -474,7 +502,7 @@ namespace SistemaHospital.WEB.Reports.XSD {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DSConsultasXEspecialidad ds = new DSConsultasXEspecialidad();
+                AvanceConsultasXEspecialidad ds = new AvanceConsultasXEspecialidad();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -492,7 +520,7 @@ namespace SistemaHospital.WEB.Reports.XSD {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "TConsultasXEspecialidadDataTable";
+                attribute2.FixedValue = "TAvanceConsultasDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -536,73 +564,127 @@ namespace SistemaHospital.WEB.Reports.XSD {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class TConsultasXEspecialidadRow : global::System.Data.DataRow {
+        public partial class TAvanceConsultasRow : global::System.Data.DataRow {
             
-            private TConsultasXEspecialidadDataTable tableTConsultasXEspecialidad;
+            private TAvanceConsultasDataTable tableTAvanceConsultas;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal TConsultasXEspecialidadRow(global::System.Data.DataRowBuilder rb) : 
+            internal TAvanceConsultasRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableTConsultasXEspecialidad = ((TConsultasXEspecialidadDataTable)(this.Table));
+                this.tableTAvanceConsultas = ((TAvanceConsultasDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string nombre_especialidad {
+            public string especialidad {
                 get {
                     try {
-                        return ((string)(this[this.tableTConsultasXEspecialidad.nombre_especialidadColumn]));
+                        return ((string)(this[this.tableTAvanceConsultas.especialidadColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nombre_especialidad\' de la tabla \'TConsultasXEspecialidad" +
-                                "\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'especialidad\' de la tabla \'TAvanceConsultas\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTConsultasXEspecialidad.nombre_especialidadColumn] = value;
+                    this[this.tableTAvanceConsultas.especialidadColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public long Consultas {
+            public string mes {
                 get {
                     try {
-                        return ((long)(this[this.tableTConsultasXEspecialidad.ConsultasColumn]));
+                        return ((string)(this[this.tableTAvanceConsultas.mesColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Consultas\' de la tabla \'TConsultasXEspecialidad\' es DBNul" +
-                                "l.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'mes\' de la tabla \'TAvanceConsultas\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTConsultasXEspecialidad.ConsultasColumn] = value;
+                    this[this.tableTAvanceConsultas.mesColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool Isnombre_especialidadNull() {
-                return this.IsNull(this.tableTConsultasXEspecialidad.nombre_especialidadColumn);
+            public long cantidad {
+                get {
+                    try {
+                        return ((long)(this[this.tableTAvanceConsultas.cantidadColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'cantidad\' de la tabla \'TAvanceConsultas\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTAvanceConsultas.cantidadColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Setnombre_especialidadNull() {
-                this[this.tableTConsultasXEspecialidad.nombre_especialidadColumn] = global::System.Convert.DBNull;
+            public string idFecha {
+                get {
+                    try {
+                        return ((string)(this[this.tableTAvanceConsultas.idFechaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'idFecha\' de la tabla \'TAvanceConsultas\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTAvanceConsultas.idFechaColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsConsultasNull() {
-                return this.IsNull(this.tableTConsultasXEspecialidad.ConsultasColumn);
+            public bool IsespecialidadNull() {
+                return this.IsNull(this.tableTAvanceConsultas.especialidadColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetConsultasNull() {
-                this[this.tableTConsultasXEspecialidad.ConsultasColumn] = global::System.Convert.DBNull;
+            public void SetespecialidadNull() {
+                this[this.tableTAvanceConsultas.especialidadColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsmesNull() {
+                return this.IsNull(this.tableTAvanceConsultas.mesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetmesNull() {
+                this[this.tableTAvanceConsultas.mesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IscantidadNull() {
+                return this.IsNull(this.tableTAvanceConsultas.cantidadColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetcantidadNull() {
+                this[this.tableTAvanceConsultas.cantidadColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsidFechaNull() {
+                return this.IsNull(this.tableTAvanceConsultas.idFechaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetidFechaNull() {
+                this[this.tableTAvanceConsultas.idFechaColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -610,22 +692,22 @@ namespace SistemaHospital.WEB.Reports.XSD {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class TConsultasXEspecialidadRowChangeEvent : global::System.EventArgs {
+        public class TAvanceConsultasRowChangeEvent : global::System.EventArgs {
             
-            private TConsultasXEspecialidadRow eventRow;
+            private TAvanceConsultasRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public TConsultasXEspecialidadRowChangeEvent(TConsultasXEspecialidadRow row, global::System.Data.DataRowAction action) {
+            public TAvanceConsultasRowChangeEvent(TAvanceConsultasRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public TConsultasXEspecialidadRow Row {
+            public TAvanceConsultasRow Row {
                 get {
                     return this.eventRow;
                 }

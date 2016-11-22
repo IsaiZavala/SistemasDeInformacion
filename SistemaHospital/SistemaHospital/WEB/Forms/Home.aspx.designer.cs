@@ -83,5 +83,23 @@ namespace SistemaHospital.WEB.Forms {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::SistemaHospital.WEB.Controls.ConsultasXEspecialidad rptConsultasXEspecialidad;
+        
+        /// <summary>
+        /// Control rptEspecialidad_anio.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::SistemaHospital.WEB.Controls.AvanceXEspecialidad rptEspecialidad_anio;
+        
+        /// <summary>
+        /// Control rptMedicosXEspecialidad.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::SistemaHospital.WEB.Controls.MedicosXEspecialidad rptMedicosXEspecialidad;
     }
 }

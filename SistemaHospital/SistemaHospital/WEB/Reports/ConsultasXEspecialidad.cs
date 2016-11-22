@@ -16,14 +16,14 @@ namespace SistemaHospital.WEB.Reports {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class TConsultasXEspecialidad : ReportClass {
+    public class ConsultasXEspecialidad : ReportClass {
         
-        public TConsultasXEspecialidad() {
+        public ConsultasXEspecialidad() {
         }
         
         public override string ResourceName {
             get {
-                return "TConsultasXEspecialidad.rpt";
+                return "ConsultasXEspecialidad.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace SistemaHospital.WEB.Reports {
         
         public override string FullResourceName {
             get {
-                return "SistemaHospital.WEB.Reports.TConsultasXEspecialidad.rpt";
+                return "SistemaHospital.WEB.Reports.ConsultasXEspecialidad.rpt";
             }
             set {
                 // Do nothing
@@ -66,7 +66,7 @@ namespace SistemaHospital.WEB.Reports {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section3 {
+        public CrystalDecisions.CrystalReports.Engine.Section GroupHeaderSection1 {
             get {
                 return this.ReportDefinition.Sections[2];
             }
@@ -74,7 +74,7 @@ namespace SistemaHospital.WEB.Reports {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
+        public CrystalDecisions.CrystalReports.Engine.Section Section3 {
             get {
                 return this.ReportDefinition.Sections[3];
             }
@@ -82,9 +82,25 @@ namespace SistemaHospital.WEB.Reports {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
+        public CrystalDecisions.CrystalReports.Engine.Section GroupFooterSection1 {
             get {
                 return this.ReportDefinition.Sections[4];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
+            get {
+                return this.ReportDefinition.Sections[5];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
+            get {
+                return this.ReportDefinition.Sections[6];
             }
         }
         
@@ -98,9 +114,9 @@ namespace SistemaHospital.WEB.Reports {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedTConsultasXEspecialidad : Component, ICachedReport {
+    public class CachedConsultasXEspecialidad : Component, ICachedReport {
         
-        public CachedTConsultasXEspecialidad() {
+        public CachedConsultasXEspecialidad() {
         }
         
         [Browsable(false)]
@@ -137,7 +153,7 @@ namespace SistemaHospital.WEB.Reports {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            TConsultasXEspecialidad rpt = new TConsultasXEspecialidad();
+            ConsultasXEspecialidad rpt = new ConsultasXEspecialidad();
             rpt.Site = this.Site;
             return rpt;
         }
