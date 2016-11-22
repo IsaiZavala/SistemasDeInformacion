@@ -8,7 +8,7 @@ BEGIN
 	, P.Telefono
 	, P.Fecha_Nacimiento
 	FROM mydb.Paciente AS P
-	WHERE (Nombre IS NULL OR P.nombre = Nombre)
-    AND (Telefono IS NULL OR P.telefono = Telefono)
+	WHERE (Nombre IS NULL OR P.nombre LIKE Nombre)
+    AND (Telefono IS NULL OR P.telefono LIKE Telefono)
     ;
 END
