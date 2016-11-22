@@ -1062,6 +1062,7 @@
     <Content Include="WEB\Resources\plugins\timepicker\bootstrap-timepicker.min.css" />
     <Content Include="WEB\Resources\plugins\timepicker\bootstrap-timepicker.min.js" />
     <Content Include="WEB\Resources\starter.html" />
+    <Content Include="WEB\Controls\VisitasPaciente.ascx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="providers.config" />
@@ -1323,6 +1324,17 @@
     <Content Include="WEB\Reports\XSD\MedicosXEspecialidad.xss">
       <DependentUpon>MedicosXEspecialidad.xsd</DependentUpon>
     </Content>
+    <Content Include="WEB\Reports\XSD\VistasPacientes.xsc">
+      <DependentUpon>VistasPacientes.xsd</DependentUpon>
+    </Content>
+    <None Include="WEB\Reports\XSD\VistasPacientes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VistasPacientes.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="WEB\Reports\XSD\VistasPacientes.xss">
+      <DependentUpon>VistasPacientes.xsd</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\GenericBLL.cs" />
@@ -1485,6 +1497,12 @@
       <DependentUpon>TratamientoReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="WEB\Reports\VisitasPaciente.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VisitasPaciente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="WEB\Reports\XSD\AvanceConsultasXEspecialidad.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1547,6 +1565,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MedicosXEspecialidad.xsd</DependentUpon>
     </Compile>
+    <Compile Include="WEB\Reports\XSD\VistasPacientes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VistasPacientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Controls\VisitasPaciente.ascx.cs">
+      <DependentUpon>VisitasPaciente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Controls\VisitasPaciente.ascx.designer.cs">
+      <DependentUpon>VisitasPaciente.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -1589,6 +1619,10 @@
     <EmbeddedResource Include="WEB\Reports\TratamientoReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>TratamientoReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WEB\Reports\VisitasPaciente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VisitasPaciente.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

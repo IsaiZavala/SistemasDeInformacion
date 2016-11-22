@@ -101,5 +101,14 @@ namespace SistemaHospital.WEB.Forms {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::SistemaHospital.WEB.Controls.MedicosXEspecialidad rptMedicosXEspecialidad;
+        
+        /// <summary>
+        /// Control rptVisitasPacientes.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::SistemaHospital.WEB.VisitasPaciente rptVisitasPacientes;
     }
 }

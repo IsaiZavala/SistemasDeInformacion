@@ -9,6 +9,7 @@
 <%@ Register TagPrefix="UserControls" TagName="ConsultasXEspecialidad" Src="~/WEB/Controls/ConsultasXEspecialidad.ascx" %>
 <%@ Register TagPrefix="UserControls" TagName="Especialidad_anio" Src="~/WEB/Controls/AvanceXEspecialidad.ascx" %>
 <%@ Register TagPrefix="UserControls" TagName="MedicosXEspecialidad" Src="~/WEB/Controls/MedicosXEspecialidad.ascx" %>
+<%@ Register TagPrefix="UserControls" TagName="VisitasPacientes" Src="~/WEB/Controls/VisitasPaciente.ascx" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     
@@ -43,5 +44,8 @@
     </div>
     <div id="divMedicosXEspecialidad" class="box-body" style="display:block">
         <UserControls:MedicosXEspecialidad runat="server" ID="rptMedicosXEspecialidad" />
+    </div>
+    <div id="divVisitasPacientes" class="box-body" style="display:block">
+        <UserControls:VisitasPacientes runat="server" ID="rptVisitasPacientes" />
     </div>
 </asp:Content>
