@@ -136,6 +136,7 @@
     <Content Include="WEB\Controls\EstudioReport.ascx" />
     <Content Include="WEB\Controls\InventoryReport.ascx" />
     <Content Include="WEB\Controls\DoctorReport.ascx" />
+    <Content Include="WEB\Controls\MaterialConsultaReport.ascx" />
     <Content Include="WEB\Controls\MedicosXEspecialidad.ascx" />
     <Content Include="WEB\Controls\PacienteReport.ascx" />
     <Content Include="WEB\Controls\TratamientoReport.ascx" />
@@ -1283,6 +1284,17 @@
     <Content Include="WEB\Reports\XSD\DSPacienteReport.xsc">
       <DependentUpon>DSPacienteReport.xsd</DependentUpon>
     </Content>
+    <Content Include="WEB\Reports\XSD\DSMaterialConsultaReport.xsc">
+      <DependentUpon>DSMaterialConsultaReport.xsd</DependentUpon>
+    </Content>
+    <None Include="WEB\Reports\XSD\DSMaterialConsultaReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMaterialConsultaReport.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="WEB\Reports\XSD\DSMaterialConsultaReport.xss">
+      <DependentUpon>DSMaterialConsultaReport.xsd</DependentUpon>
+    </Content>
     <None Include="WEB\Reports\XSD\DSPacienteReport.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -1395,6 +1407,13 @@
     <Compile Include="WEB\Controls\DoctorReport.ascx.designer.cs">
       <DependentUpon>DoctorReport.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WEB\Controls\MaterialConsultaReport.ascx.cs">
+      <DependentUpon>MaterialConsultaReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Controls\MaterialConsultaReport.ascx.designer.cs">
+      <DependentUpon>MaterialConsultaReport.ascx</DependentUpon>
+    </Compile>
     <Compile Include="WEB\Controls\MedicosXEspecialidad.ascx.cs">
       <DependentUpon>MedicosXEspecialidad.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1479,6 +1498,12 @@
       <DependentUpon>InventoryReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="WEB\Reports\MaterialConsultaReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaterialConsultaReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="WEB\Reports\MedicosXEspecialidad.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1545,6 +1570,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSInventoryReport.xsd</DependentUpon>
     </Compile>
+    <Compile Include="WEB\Reports\XSD\DSMaterialConsultaReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMaterialConsultaReport.xsd</DependentUpon>
+    </Compile>
     <Compile Include="WEB\Reports\XSD\DSPacienteReport.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1607,6 +1637,10 @@
     <EmbeddedResource Include="WEB\Reports\InventoryReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>InventoryReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WEB\Reports\MaterialConsultaReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MaterialConsultaReport.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="WEB\Reports\MedicosXEspecialidad.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
