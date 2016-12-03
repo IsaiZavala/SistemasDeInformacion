@@ -389,7 +389,7 @@ namespace SistemaHospital.WEB.Reports.XSD {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public TAvanceConsultasRow AddTAvanceConsultasRow(string especialidad, string mes, long cantidad, string idFecha) {
+            public TAvanceConsultasRow AddTAvanceConsultasRow(string especialidad, System.DateTime mes, long cantidad, string idFecha) {
                 TAvanceConsultasRow rowTAvanceConsultasRow = ((TAvanceConsultasRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         especialidad,
@@ -429,7 +429,7 @@ namespace SistemaHospital.WEB.Reports.XSD {
             private void InitClass() {
                 this.columnespecialidad = new global::System.Data.DataColumn("especialidad", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnespecialidad);
-                this.columnmes = new global::System.Data.DataColumn("mes", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnmes = new global::System.Data.DataColumn("mes", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnmes);
                 this.columncantidad = new global::System.Data.DataColumn("cantidad", typeof(long), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncantidad);
@@ -593,10 +593,10 @@ namespace SistemaHospital.WEB.Reports.XSD {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string mes {
+            public System.DateTime mes {
                 get {
                     try {
-                        return ((string)(this[this.tableTAvanceConsultas.mesColumn]));
+                        return ((global::System.DateTime)(this[this.tableTAvanceConsultas.mesColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("El valor de la columna \'mes\' de la tabla \'TAvanceConsultas\' es DBNull.", e);

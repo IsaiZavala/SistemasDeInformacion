@@ -31,6 +31,15 @@ namespace SistemaHospital.WEB.Controls {
         protected global::System.Web.UI.WebControls.TextBox TextBox_anio;
         
         /// <summary>
+        /// Control seguimientoList.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList seguimientoList;
+        
+        /// <summary>
         /// Control Button1.
         /// </summary>
         /// <remarks>
