@@ -140,6 +140,7 @@
     <Content Include="WEB\Controls\MedicosXEspecialidad.ascx" />
     <Content Include="WEB\Controls\PacienteReport.ascx" />
     <Content Include="WEB\Controls\TratamientoReport.ascx" />
+    <Content Include="WEB\Forms\Ejecutivo.aspx" />
     <Content Include="WEB\Forms\Home.aspx" />
     <Content Include="WEB\Forms\Login.aspx" />
     <Content Include="WEB\Resources\bootstrap\css\bootstrap.css" />
@@ -229,6 +230,14 @@
     <Content Include="WEB\Resources\Gruntfile.js" />
     <Content Include="WEB\Resources\index.html" />
     <Content Include="WEB\Resources\index2.html" />
+    <Content Include="WEB\Resources\jquery\jquery-1.12.4.js" />
+    <Content Include="WEB\Resources\jquery\ui\bootstrap-checkbox.js" />
+    <Content Include="WEB\Resources\jquery\ui\datepicker-es.js" />
+    <Content Include="WEB\Resources\jquery\ui\jquery-1.12.1.js" />
+    <Content Include="WEB\Resources\jquery\ui\MinusAndPlus.js" />
+    <Content Include="WEB\Resources\jquery\ui\themes\images\ui-icons_444444_256x240.png" />
+    <Content Include="WEB\Resources\jquery\ui\themes\images\ui-icons_555555_256x240.png" />
+    <Content Include="WEB\Resources\jquery\ui\themes\jquery-1.12.1.css" />
     <Content Include="WEB\Resources\pages\calendar.html" />
     <Content Include="WEB\Resources\pages\charts\chartjs.html" />
     <Content Include="WEB\Resources\pages\charts\flot.html" />
@@ -1441,6 +1450,13 @@
     <Compile Include="WEB\Controls\TratamientoReport.ascx.designer.cs">
       <DependentUpon>TratamientoReport.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WEB\Forms\Ejecutivo.aspx.cs">
+      <DependentUpon>Ejecutivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Forms\Ejecutivo.aspx.designer.cs">
+      <DependentUpon>Ejecutivo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WEB\Forms\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1549,7 +1565,6 @@
     </Compile>
     <Compile Include="WEB\Reports\XSD\DSConsultasXEspecialidad.cs">
       <DependentUpon>DSConsultasXEspecialidad.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="WEB\Reports\XSD\DSConsultasXEspecialidad.Designer.cs">
       <AutoGen>True</AutoGen>
