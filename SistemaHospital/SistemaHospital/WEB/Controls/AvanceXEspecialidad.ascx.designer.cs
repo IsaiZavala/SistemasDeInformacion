@@ -22,13 +22,40 @@ namespace SistemaHospital.WEB.Controls {
         protected global::System.Web.UI.WebControls.TextBox TextBox_idEspecialidad;
         
         /// <summary>
-        /// Control TextBox_anio.
+        /// Control mes_ini_ddp.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_anio;
+        protected global::System.Web.UI.WebControls.DropDownList mes_ini_ddp;
+        
+        /// <summary>
+        /// Control anio_ini_ddp.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList anio_ini_ddp;
+        
+        /// <summary>
+        /// Control mes_fin_ddp.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList mes_fin_ddp;
+        
+        /// <summary>
+        /// Control anio_fin_ddp.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList anio_fin_ddp;
         
         /// <summary>
         /// Control seguimientoList.

@@ -1354,6 +1354,12 @@
     <Compile Include="Objects\ParametersReport.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\AppSettings.cs" />
+    <Compile Include="Tools\HistorialReportControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tools\MinMaxReportContronl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Tools\ReportControl.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>

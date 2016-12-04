@@ -19,13 +19,15 @@ namespace SistemaHospital.WEB.Controls
         public override MySqlParameter[] GetParameters()
         {
 
-            string top = "10";
+            string top = n_TextBox.Text;
+            string orden = orden_CheckList.SelectedValue;
 
             List<MySqlParameter> lstParameters = new List<MySqlParameter>();
-            lstParameters.Add(new MySqlParameter("@top", MySqlDbType.Int64));
+            lstParameters.Add(new MySqlParameter("@n", MySqlDbType.Int64));
+            lstParameters.Add(new MySqlParameter("@tipo", MySqlDbType.VarChar));
 
             lstParameters[0].Value = !string.IsNullOrEmpty(top) ? top : "10";
-
+            lstParameters[1].Value = orden;
 
             return lstParameters.ToArray();
         }
@@ -37,7 +39,7 @@ namespace SistemaHospital.WEB.Controls
 
         public override string StoredProcedureName()
         {
-            return "mydb.MedicosXEspecialidad";
+            return "mydb.Cant_MedicosXEspecialidad";
         }
 
         public override string TableName()
@@ -53,6 +55,14 @@ namespace SistemaHospital.WEB.Controls
         public override string FileName()
         {
             return "medicosXespecialidad_";
+        }
+
+        public override object[] GetParametersReport()
+        {
+            object[] objParams = new object[2];
+            objParams[0] = new object[] { "CompanyName", "Sistema de hospital" };
+            objParams[1] = new object[] { "ReportName", "Cantidad de medicos por especialidad" };
+            return objParams;
         }
     }
 }

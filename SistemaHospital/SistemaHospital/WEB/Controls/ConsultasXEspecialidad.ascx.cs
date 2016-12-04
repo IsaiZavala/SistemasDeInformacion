@@ -10,7 +10,7 @@ using MySql.Data.MySqlClient;
 
 namespace SistemaHospital.WEB.Controls
 {
-    public partial class ConsultasXEspecialidad : ReportControl
+    public partial class ConsultasXEspecialidad : MinMaxReportContronl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -22,43 +22,42 @@ namespace SistemaHospital.WEB.Controls
             GenerateReport();
         }
 
-        public override MySqlParameter[] GetParameters()
-        {
-            string cat_registros = txtcant_Registros.Text.Trim();
-            string fechaMin = txtFechaMin.Text.Trim();
-            string fechaMax = txtFechaMax.Text.Trim();
-
-            List<MySqlParameter> lstParameters = new List<MySqlParameter>();
-            lstParameters.Add(new MySqlParameter("@cant_registros", MySqlDbType.Int64));
-            lstParameters.Add(new MySqlParameter("@fechaMin", MySqlDbType.Date));
-            lstParameters.Add(new MySqlParameter("@fechaMax", MySqlDbType.Date));
-
-            lstParameters[0].Value = !string.IsNullOrEmpty(cat_registros) ? cat_registros : "10"; // cantidad de registros
-            lstParameters[1].Value = !string.IsNullOrEmpty(cat_registros) ? cat_registros : "2000/01/01"; // cantidad de registros
-            lstParameters[2].Value = !string.IsNullOrEmpty(cat_registros) ? cat_registros : "2016/12/31"; // cantidad de registros
-
-
-            return lstParameters.ToArray();
-        }
-
         public override string StoredProcedureName()
         {
-            return "mydb.ConsultasXEspecialidad";
-        }
-
-        public override string TableName()
-        {
-            return "TConsultasXEspecialidad";
-        }
-
-        public override string ReportPath()
-        {
-            return "~/WEB/Reports/ConsultasXEspecialidad.rpt";
+            return "mydb.MinMax_Especialidad";
         }
 
         public override string FileName()
         {
             return "ConsXEspecialidad_";
+        }
+
+        public override string Inicio()
+        {
+            return anio_ini_ddp.SelectedValue + "-" + mes_ini_ddp.SelectedValue + "-01";
+        }
+
+        public override string Fin()
+        {
+            int anio = Convert.ToInt32(anio_fin_ddp.SelectedValue);
+            int mes = Convert.ToInt32(mes_fin_ddp.SelectedValue);
+
+            return anio_fin_ddp.SelectedValue + "-" + mes_fin_ddp.SelectedValue + "-" + DateTime.DaysInMonth(anio, mes);
+        }
+
+        public override string GetOrden()
+        {
+            return orden_radiobutton.SelectedValue;
+        }
+
+        public override string GetN()
+        {
+            return txtcant_Registros.Text.Trim();
+        }
+
+        public override string ReportName()
+        {
+            return "Reporte de Consultas por Especialidad";
         }
     }
 }

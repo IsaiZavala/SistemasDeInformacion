@@ -22,22 +22,58 @@ namespace SistemaHospital.WEB.Controls {
         protected global::System.Web.UI.WebControls.TextBox txtcant_Registros;
         
         /// <summary>
-        /// Control txtFechaMin.
+        /// Control mes_ini_ddp.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFechaMin;
+        protected global::System.Web.UI.WebControls.DropDownList mes_ini_ddp;
         
         /// <summary>
-        /// Control txtFechaMax.
+        /// Control anio_ini_ddp.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFechaMax;
+        protected global::System.Web.UI.WebControls.DropDownList anio_ini_ddp;
+        
+        /// <summary>
+        /// Control mes_fin_ddp.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList mes_fin_ddp;
+        
+        /// <summary>
+        /// Control anio_fin_ddp.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList anio_fin_ddp;
+        
+        /// <summary>
+        /// Control Label1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
+        
+        /// <summary>
+        /// Control orden_radiobutton.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList orden_radiobutton;
         
         /// <summary>
         /// Control Button1.
