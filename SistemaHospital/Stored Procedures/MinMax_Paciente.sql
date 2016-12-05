@@ -1,8 +1,7 @@
-DELIMITER $$
 CREATE DEFINER=`root`@`%` PROCEDURE `MinMax_Paciente`(IN n INT,IN fecha_ini date,IN fecha_fin date, in tipo varchar(1))
 BEGIN
 	if tipo = '+' then
-		select nombre, count(folio) as valor
+		select nombre as MinMax_Item_cantidad, count(folio) as Consultas
 		from (select Paciente.nombre, Consulta.*
 			  from Consulta inner join Paciente
 			  on Consulta.id_paciente = Paciente.idPaciente
@@ -11,7 +10,7 @@ BEGIN
 		order by valor DESC
 		limit n;
 	else
-		select nombre, count(folio) as valor
+		select nombre as MinMax_Item_cantidad, count(folio) as Consultas
 		from (select Paciente.nombre, Consulta.*
 			  from Consulta inner join Paciente
 			  on Consulta.id_paciente = Paciente.idPaciente
@@ -20,5 +19,4 @@ BEGIN
 		order by valor ASC
 		limit n;
 	end if;
-END$$
-DELIMITER ;
+END
