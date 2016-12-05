@@ -73,6 +73,8 @@
     </div>
 </div>
 
+    <br />
+
     <div id="divInventoryReport" class="" runat="server">
         <UserControls:InventoryReport runat="server" ID="rptInventoryReport"/>
     </div>
@@ -121,7 +123,7 @@
         <div class="col-md-5">
             <asp:RequiredFieldValidator runat="server" ID="rqddlReporteASP" ControlToValidate="ddlReporteASP"
                      InitialValue="SinSeleccion" CssClass="label-danger"
-                    Font-Italic="true" ErrorMessage="Debe seleccionar algun reporte reporte"></asp:RequiredFieldValidator>
+                    Font-Italic="true" ErrorMessage="Debe seleccionar algun reporte"></asp:RequiredFieldValidator>
         </div>
     </div>
 

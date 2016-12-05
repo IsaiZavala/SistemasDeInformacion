@@ -104,7 +104,7 @@ namespace SistemaHospital.WEB.Forms
         private void LoadMaterialConsulta()
         {
             rptMaterialConsulta.Visible = true;
-            SetTituloFormulario("Reporte de material de consulta");
+            SetTituloFormulario("Reporte de medicamentos por consulta");
         }
 
         private void LoadVisitasPacientes()
@@ -170,6 +170,7 @@ namespace SistemaHospital.WEB.Forms
         private void LoadPacienteReport()
         {
             rptPacienteReport.Visible = true;
+            SetTituloFormulario("Reporte de pacientes");
         }
 
         public void SetTituloFormulario(string title)

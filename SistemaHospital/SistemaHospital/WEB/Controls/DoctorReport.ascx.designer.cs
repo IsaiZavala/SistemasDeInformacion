@@ -22,12 +22,12 @@ namespace SistemaHospital.WEB.Controls {
         protected global::System.Web.UI.WebControls.TextBox txtNombre;
         
         /// <summary>
-        /// Control hdDate.
+        /// Control FechaNacimiento.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hdDate;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText FechaNacimiento;
     }
 }

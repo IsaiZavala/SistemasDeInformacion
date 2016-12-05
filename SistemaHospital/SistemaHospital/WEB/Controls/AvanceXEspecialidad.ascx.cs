@@ -16,11 +16,6 @@ namespace SistemaHospital.WEB.Controls
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            GenerateReport();
-        }
-
         public override string FileName()
         {
             return "especilaidad_anio_";
