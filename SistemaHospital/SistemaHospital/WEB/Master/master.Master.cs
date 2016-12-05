@@ -24,6 +24,5 @@ namespace SistemaHospital.WEB.Master
             get { return txtTitulo.InnerText; }
             set { txtTitulo.InnerText = value; }
         }
-
     }
 }

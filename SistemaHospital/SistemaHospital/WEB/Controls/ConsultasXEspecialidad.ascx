@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ConsultasXEspecialidad.ascx.cs" Inherits="SistemaHospital.WEB.Controls.ConsultasXEspecialidad" %>
-<h3>Reporte de Consultas por Especialidad</h3><br />
+
 Cantidad de registros:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <asp:TextBox ID="txtcant_Registros" runat="server"></asp:TextBox>
 <br />
@@ -68,7 +68,4 @@ Cantidad de registros:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:ListItem Value="-">Menor</asp:ListItem>
     <asp:ListItem Selected="True" Value="+">Mayor</asp:ListItem>
 </asp:RadioButtonList>
-<br />
-<br />
-<asp:Button ID="Button1" CssClass="btn btn-warning" runat="server" OnClick="btnGenerateReport_Click" Text="Generar reporte" />
 

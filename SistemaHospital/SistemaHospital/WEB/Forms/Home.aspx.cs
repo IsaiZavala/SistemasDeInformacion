@@ -4,143 +4,235 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using SistemaHospital.Tools;
 
 namespace SistemaHospital.WEB.Forms
 {
     public partial class Home : System.Web.UI.Page
     {
+        private static IList<ReportControl> lstReportes = new List<ReportControl>();
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                CargaListaReportes();
+                OcultaReportes();
+            }
+        }
 
+        private void CargaListaReportes()
+        {
+            lstReportes.Add(rptConsultaReport);
+            lstReportes.Add(rptConsultasXEspecialidad);
+            lstReportes.Add(rptDoctorReport);
+            lstReportes.Add(rptEspecialidadReport);
+            lstReportes.Add(rptEspecialidad_anio);
+            lstReportes.Add(rptEstudioReport);
+            lstReportes.Add(rptInventoryReport);
+            lstReportes.Add(rptMaterialConsulta);
+            lstReportes.Add(rptMedicosXEspecialidad);
+            lstReportes.Add(rptPacienteReport);
+            lstReportes.Add(rptTratamientoReport);
+            lstReportes.Add(rptVisitasPacientes);
         }
 
         protected void ddlReporteASP_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OcultaDivs();
+            OcultaReportes();
+            SetTituloFormulario("");
 
             DropDownList ddl = sender as DropDownList;
 
             switch (ddl.SelectedValue)
             {
-                case "divInventoryReport":
+                case "rptInventoryReport":
                     LoadInventoryReport();
-                break;
-                case "divPacienteReport":
+                    break;
+                case "rptPacienteReport":
                     LoadPacienteReport();
-                break;
-                case "divEspecialidadReport":
+                    break;
+                case "rptEspecialidadReport":
                     LoadEspecialidadReport();
-                break;
-                case "divEstudioReport":
+                    break;
+                case "rptEstudioReport":
                     LoadEstudioReport();
-                break;
-                case "divDoctorReport":
+                    break;
+                case "rptDoctorReport":
                     LoadDoctorReport();
-                break;
-                case "divTratamientoReport":
+                    break;
+                case "rptTratamientoReport":
                     LoadTratamientoReport();
-                break;
-                case "divConsultaReport":
+                    break;
+                case "rptConsultaReport":
                     LoadConsultaReport();
-                break;
-                case "divConsultasXEspecialidad":
+                    break;
+                case "rptConsultasXEspecialidad":
                     LoadConsultasXEspecialidad();
-                break;
-                case "divEspecialidad_anio":
+                    break;
+                case "rptEspecialidad_anio":
                     LoadEspecialidad_anio();
-                break;
-                case "divMedicosXEspecialidad":
+                    break;
+                case "rptMedicosXEspecialidad":
                     LoadMedicosXEspecialidad();
-                break;
-                case "divVisitasPacientes":
+                    break;
+                case "rptVisitasPacientes":
                     LoadVisitasPacientes();
-                break;
-                case "divMaterialConsulta":
+                    break;
+                case "rptMaterialConsulta":
                     LoadMaterialConsulta();
-                break;
+                    break;
             }
         }
 
-        private void OcultaDivs()
+        private void OcultaReportes()
         {
-            divInventoryReport.Visible = false;
-            divPacienteReport.Visible = false;
-            divEspecialidadReport.Visible = false;
-            divEstudioReport.Visible = false;
-            divDoctorReport.Visible = false;
-            divTratamientoReport.Visible = false;
-            divConsultaReport.Visible = false;
-            divConsultasXEspecialidad.Visible = false;
-            divEspecialidad_anio.Visible = false;
-            divMedicosXEspecialidad.Visible = false;
-            divVisitasPacientes.Visible = false;
-            divMaterialConsulta.Visible = false;
+            rptInventoryReport.Visible = false;
+            rptPacienteReport.Visible = false;
+            rptEspecialidadReport.Visible = false;
+            rptEstudioReport.Visible = false;
+            rptDoctorReport.Visible = false;
+            rptTratamientoReport.Visible = false;
+            rptConsultaReport.Visible = false;
+            rptConsultasXEspecialidad.Visible = false;
+            rptEspecialidad_anio.Visible = false;
+            rptMedicosXEspecialidad.Visible = false;
+            rptVisitasPacientes.Visible = false;
+            rptMaterialConsulta.Visible = false;
         }
-
 
         private void LoadMaterialConsulta()
         {
-            divMaterialConsulta.Visible = true;
+            rptMaterialConsulta.Visible = true;
+            SetTituloFormulario("Reporte de material de consulta");
         }
 
         private void LoadVisitasPacientes()
         {
-            divVisitasPacientes.Visible = true;
+            rptVisitasPacientes.Visible = true;
+            SetTituloFormulario("Reporte de visitas de pacientes");
         }
 
         private void LoadMedicosXEspecialidad()
         {
-            divMedicosXEspecialidad.Visible = true;
+            rptMedicosXEspecialidad.Visible = true;
+            SetTituloFormulario("Reporte de médicos por especialidad");
         }
 
         private void LoadEspecialidad_anio()
         {
-            divEspecialidad_anio.Visible = true;
+            rptEspecialidad_anio.Visible = true;
+            SetTituloFormulario("Reporte de avance por especialidad");
         }
 
         private void LoadConsultasXEspecialidad()
         {
-            divConsultasXEspecialidad.Visible = true;
+            rptConsultasXEspecialidad.Visible = true;
+            SetTituloFormulario("Reporte de consultas por especialidad");
         }
 
         private void LoadConsultaReport()
         {
-            divConsultaReport.Visible = true;
+            rptConsultaReport.Visible = true;
+            SetTituloFormulario("Reporte de consultas");
         }
 
         private void LoadTratamientoReport()
         {
-            divTratamientoReport.Visible = true;
+            rptTratamientoReport.Visible = true;
+            SetTituloFormulario("Reporte de tratamientos");
         }
 
         private void LoadDoctorReport()
         {
-            divDoctorReport.Visible = true;
+            rptDoctorReport.Visible = true;
+            SetTituloFormulario("Reporte de doctores");
         }
 
         private void LoadEstudioReport()
         {
-            divEstudioReport.Visible = true;
+            rptEstudioReport.Visible = true;
+            SetTituloFormulario("Reporte de estudios");
         }
 
         private void LoadInventoryReport()
         {
-            divInventoryReport.Visible = true;
+            rptInventoryReport.Visible = true;
+            SetTituloFormulario("Reporte de inventario");
         }
 
         private void LoadEspecialidadReport()
         {
-            divEspecialidadReport.Visible = true;
+            rptEspecialidadReport.Visible = true;
+            SetTituloFormulario("Reporte de especialidad");
         }
 
         private void LoadPacienteReport()
         {
-            divPacienteReport.Visible = true;
+            rptPacienteReport.Visible = true;
+        }
+
+        public void SetTituloFormulario(string title)
+        {
+            try
+            {
+                (this.Master as Master.master).TituloFormulario = title;
+            }
+            catch (Exception e)
+            {
+                // No es un error importante
+            }
         }
 
         protected void btnGenerarReporte_Click(object sender, EventArgs e)
         {
+            ReportControl report = GetControlReport();
 
+            if (report != null)
+            {
+                report.GenerateReport();
+            }
         }
+
+
+        private ReportControl GetControlReport()
+        {
+            ContentPlaceHolder cph = Page.Master.FindControl("ContentPlaceHolder1") as ContentPlaceHolder;
+            List<ReportControl> lstReports = FindAllReports(cph.Controls);
+
+            foreach (ReportControl itemControl in lstReports)
+            {
+                if (itemControl.Visible == true)
+                {
+                    return itemControl;
+                }
+            }
+
+            return null;
+        }
+
+        public List<ReportControl> FindAllReports(ControlCollection lstControls)
+        {
+            List<ReportControl> lstControlsResult = new List<ReportControl>();
+
+            if (lstControls != null)
+            {
+                foreach (Control c in lstControls)
+                {
+                    if (c is Tools.ReportControl)
+                    {
+                        lstControlsResult.Add(c as ReportControl);
+                    }
+                    else if (c.HasControls())
+                    {
+                        lstControlsResult.AddRange(FindAllReports(c.Controls));
+                    }
+                }
+            }
+
+            return lstControlsResult;
+        }
+
+
     }
 }

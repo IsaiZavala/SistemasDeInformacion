@@ -16,11 +16,6 @@ namespace SistemaHospital.WEB
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            GenerateReport();
-        }
-
         public override string Inicio()
         {
             //return anio_ini_ddp.SelectedValue + "-" + mes_ini_ddp.SelectedValue + "-01";

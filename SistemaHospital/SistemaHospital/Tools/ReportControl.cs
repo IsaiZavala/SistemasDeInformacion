@@ -7,7 +7,6 @@ using CrystalDecisions.CrystalReports.Engine;
 using CrystalDecisions.Shared;
 using MySql.Data.MySqlClient;
 using System.Data;
-using SistemaHospital.Objects;
 
 
 namespace SistemaHospital.Tools

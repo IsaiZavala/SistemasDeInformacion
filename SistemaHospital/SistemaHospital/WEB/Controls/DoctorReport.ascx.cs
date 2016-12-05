@@ -36,11 +36,6 @@ namespace SistemaHospital.WEB.Controls
             return lstParameters.ToArray();
         }
 
-        protected void btnGenerateReport_Click(object sender, EventArgs e)
-        {
-            GenerateReport();
-        }
-
         public override string StoredProcedureName()
         {
             return "mydb.DoctorReport";

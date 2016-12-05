@@ -17,11 +17,6 @@ namespace SistemaHospital.WEB.Controls
 
         }
 
-        protected void btnGenerateReport_Click(object sender, EventArgs e)
-        {
-            GenerateReport();
-        }
-
         public override string StoredProcedureName()
         {
             return "mydb.MinMax_Especialidad";
