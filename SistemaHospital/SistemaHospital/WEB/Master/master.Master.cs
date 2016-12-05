@@ -18,5 +18,12 @@ namespace SistemaHospital.WEB.Master
         {
             return Server.MapPath(s);
         }
+
+        public string TituloFormulario
+        {
+            get { return txtTitulo.InnerText; }
+            set { txtTitulo.InnerText = value; }
+        }
+
     }
 }

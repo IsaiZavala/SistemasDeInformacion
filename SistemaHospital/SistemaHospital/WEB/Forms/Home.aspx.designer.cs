@@ -13,6 +13,60 @@ namespace SistemaHospital.WEB.Forms {
     public partial class Home {
         
         /// <summary>
+        /// Control ddlReporteASP.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlReporteASP;
+        
+        /// <summary>
+        /// Control FechaInicial.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText FechaInicial;
+        
+        /// <summary>
+        /// Control FechaFinal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText FechaFinal;
+        
+        /// <summary>
+        /// Control txtCantidad.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtCantidad;
+        
+        /// <summary>
+        /// Control chkOpcion.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox chkOpcion;
+        
+        /// <summary>
+        /// Control divInventoryReport.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divInventoryReport;
+        
+        /// <summary>
         /// Control rptInventoryReport.
         /// </summary>
         /// <remarks>
@@ -20,6 +74,15 @@ namespace SistemaHospital.WEB.Forms {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::SistemaHospital.WEB.Controls.InventoryReport rptInventoryReport;
+        
+        /// <summary>
+        /// Control divPacienteReport.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divPacienteReport;
         
         /// <summary>
         /// Control rptPacienteReport.
@@ -31,6 +94,15 @@ namespace SistemaHospital.WEB.Forms {
         protected global::SistemaHospital.WEB.Controls.PacientesReporte rptPacienteReport;
         
         /// <summary>
+        /// Control divEspecialidadReport.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divEspecialidadReport;
+        
+        /// <summary>
         /// Control rptEspecialidadReport.
         /// </summary>
         /// <remarks>
@@ -38,6 +110,15 @@ namespace SistemaHospital.WEB.Forms {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::SistemaHospital.WEB.Controls.EspecialidadReport rptEspecialidadReport;
+        
+        /// <summary>
+        /// Control divEstudioReport.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divEstudioReport;
         
         /// <summary>
         /// Control rptEstudioReport.
@@ -49,6 +130,15 @@ namespace SistemaHospital.WEB.Forms {
         protected global::SistemaHospital.WEB.Controls.EstudioReport rptEstudioReport;
         
         /// <summary>
+        /// Control divDoctorReport.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divDoctorReport;
+        
+        /// <summary>
         /// Control rptDoctorReport.
         /// </summary>
         /// <remarks>
@@ -56,6 +146,15 @@ namespace SistemaHospital.WEB.Forms {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::SistemaHospital.WEB.Controls.MedicoReport rptDoctorReport;
+        
+        /// <summary>
+        /// Control divTratamientoReport.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divTratamientoReport;
         
         /// <summary>
         /// Control rptTratamientoReport.
@@ -67,6 +166,15 @@ namespace SistemaHospital.WEB.Forms {
         protected global::SistemaHospital.WEB.Controls.TratamientoReport rptTratamientoReport;
         
         /// <summary>
+        /// Control divConsultaReport.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divConsultaReport;
+        
+        /// <summary>
         /// Control rptConsultaReport.
         /// </summary>
         /// <remarks>
@@ -74,6 +182,15 @@ namespace SistemaHospital.WEB.Forms {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::SistemaHospital.WEB.Controls.ConsultaReport rptConsultaReport;
+        
+        /// <summary>
+        /// Control divConsultasXEspecialidad.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divConsultasXEspecialidad;
         
         /// <summary>
         /// Control rptConsultasXEspecialidad.
@@ -85,6 +202,15 @@ namespace SistemaHospital.WEB.Forms {
         protected global::SistemaHospital.WEB.Controls.ConsultasXEspecialidad rptConsultasXEspecialidad;
         
         /// <summary>
+        /// Control divEspecialidad_anio.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divEspecialidad_anio;
+        
+        /// <summary>
         /// Control rptEspecialidad_anio.
         /// </summary>
         /// <remarks>
@@ -92,6 +218,15 @@ namespace SistemaHospital.WEB.Forms {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::SistemaHospital.WEB.Controls.AvanceXEspecialidad rptEspecialidad_anio;
+        
+        /// <summary>
+        /// Control divMedicosXEspecialidad.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divMedicosXEspecialidad;
         
         /// <summary>
         /// Control rptMedicosXEspecialidad.
@@ -103,6 +238,15 @@ namespace SistemaHospital.WEB.Forms {
         protected global::SistemaHospital.WEB.Controls.MedicosXEspecialidad rptMedicosXEspecialidad;
         
         /// <summary>
+        /// Control divVisitasPacientes.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divVisitasPacientes;
+        
+        /// <summary>
         /// Control rptVisitasPacientes.
         /// </summary>
         /// <remarks>
@@ -112,6 +256,15 @@ namespace SistemaHospital.WEB.Forms {
         protected global::SistemaHospital.WEB.VisitasPaciente rptVisitasPacientes;
         
         /// <summary>
+        /// Control divMaterialConsulta.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divMaterialConsulta;
+        
+        /// <summary>
         /// Control rptMaterialConsulta.
         /// </summary>
         /// <remarks>
@@ -119,5 +272,14 @@ namespace SistemaHospital.WEB.Forms {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::SistemaHospital.WEB.Controls.MaterialConsultaReport rptMaterialConsulta;
+        
+        /// <summary>
+        /// Control btnGenerarReporte.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnGenerarReporte;
     }
 }
