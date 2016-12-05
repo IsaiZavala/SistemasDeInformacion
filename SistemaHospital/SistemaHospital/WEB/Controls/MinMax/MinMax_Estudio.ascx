@@ -1,16 +1,17 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="EstudioReport.ascx.cs" Inherits="SistemaHospital.WEB.Controls.EstudioReport" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="MinMax_Estudio.ascx.cs" Inherits="SistemaHospital.WEB.Controls.MinMax.MinMax_Estudio" %>
+
 
 <div class="row">
     <div class="col-md-4">
         <div class="input-group">
-            <span class="input-group-addon">IdEspecialidad</span>
-            <asp:TextBox ID="TextBox_idEspecialidad" CssClass="form-control" runat="server"></asp:TextBox>
+            <span class="input-group-addon">Cantidad de registros&nbsp;&nbsp;&nbsp; </span>
+            &nbsp;<asp:TextBox ID="txtcant_Registros" CssClass="form-control" runat="server"></asp:TextBox>
         </div>
     </div>
     <div class="col-md-4">
         <div class="input-group">
-            <span class="input-group-addon">Desde</span>
-            <asp:DropDownList ID="mes_ini_ddp" runat="server" CssClass="form-control">
+            <span class="input-group-addon">Desde&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+            <asp:DropDownList ID="mes_ini_ddp" CssClass="form-control" runat="server">
                 <asp:ListItem Value="01">Enero</asp:ListItem>
                 <asp:ListItem Value="02">Febrero</asp:ListItem>
                 <asp:ListItem Value="03">Marzo</asp:ListItem>
@@ -24,7 +25,7 @@
                 <asp:ListItem Value="11">Noviembre</asp:ListItem>
                 <asp:ListItem Value="12">Diciembre</asp:ListItem>
             </asp:DropDownList>
-            <asp:DropDownList ID="anio_ini_ddp" runat="server" CssClass="form-control">
+            <asp:DropDownList ID="anio_ini_ddp" CssClass="form-control" runat="server">
                 <asp:ListItem>2006</asp:ListItem>
                 <asp:ListItem>2007</asp:ListItem>
                 <asp:ListItem>2008</asp:ListItem>
@@ -41,8 +42,7 @@
     </div>
     <div class="col-md-4">
         <div class="input-group">
-            <span class="input-group-addon">Hasta</span>
-            <asp:DropDownList ID="mes_fin_ddp" CssClass="form-control" runat="server">
+            <span class="input-group-addon">Hasta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&nbsp;<asp:DropDownList ID="mes_fin_ddp" CssClass="form-control" runat="server">
                 <asp:ListItem Value="01">Enero</asp:ListItem>
                 <asp:ListItem Value="02">Febrero</asp:ListItem>
                 <asp:ListItem Value="03">Marzo</asp:ListItem>
@@ -72,14 +72,18 @@
         </div>
     </div>
 </div>
+
 <div class="row">
     <div class="col-md-4">
         <div class="input-group">
-            <asp:RadioButtonList ID="seguimientoList" runat="server">
-                <asp:ListItem Selected="True" Value="Y">Años</asp:ListItem>
-                <asp:ListItem Value="M">Meses</asp:ListItem>
-                <asp:ListItem Value="W">Semanas</asp:ListItem>
+            <asp:Label ID="Label1" CssClass="input-group-addon" runat="server" Text="Orden"></asp:Label>
+            <asp:RadioButtonList ID="orden_radiobutton" runat="server">
+                <asp:ListItem Value="-">Menor</asp:ListItem>
+                <asp:ListItem Selected="True" Value="+">Mayor</asp:ListItem>
             </asp:RadioButtonList>
         </div>
     </div>
 </div>
+
+
+

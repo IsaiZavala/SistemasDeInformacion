@@ -7,10 +7,10 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace SistemaHospital.WEB.Controls {
+namespace SistemaHospital.WEB.Controls.Avance {
     
     
-    public partial class EstudioReport {
+    public partial class Avance_estudio {
         
         /// <summary>
         /// Control TextBox_idEspecialidad.

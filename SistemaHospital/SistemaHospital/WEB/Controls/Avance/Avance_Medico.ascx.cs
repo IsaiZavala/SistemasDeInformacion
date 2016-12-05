@@ -1,5 +1,4 @@
-﻿using MySql.Data.MySqlClient;
-using SistemaHospital.Tools;
+﻿using SistemaHospital.Tools;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +6,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace SistemaHospital.WEB.Controls
+namespace SistemaHospital.WEB.Controls.Avance
 {
-    public partial class AvanceXEspecialidad : HistorialReportControl
+    public partial class Avance_Medico : HistorialReportControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -18,7 +17,7 @@ namespace SistemaHospital.WEB.Controls
 
         public override string Inicio()
         {
-            return anio_ini_ddp.SelectedValue+"-"+mes_ini_ddp.SelectedValue+"-01";
+            return anio_ini_ddp.SelectedValue + "-" + mes_ini_ddp.SelectedValue + "-01";
         }
 
         public override string Fin()
@@ -26,7 +25,7 @@ namespace SistemaHospital.WEB.Controls
             int anio = Convert.ToInt32(anio_fin_ddp.SelectedValue);
             int mes = Convert.ToInt32(mes_fin_ddp.SelectedValue);
 
-            return anio_fin_ddp.SelectedValue + "-" + mes_fin_ddp.SelectedValue + "-" + DateTime.DaysInMonth(anio,mes);
+            return anio_fin_ddp.SelectedValue + "-" + mes_fin_ddp.SelectedValue + "-" + DateTime.DaysInMonth(anio, mes);
         }
 
         public override string GetId()
@@ -41,17 +40,17 @@ namespace SistemaHospital.WEB.Controls
 
         public override string ReportName()
         {
-            return "Reporte de Avance de Especialidad";
+            return "Reporte de consultas del medico";
         }
 
         public override string StoredProcedureName()
         {
-            return "mydb.Avance_Especialidad";
+            return "mydb.Avance_Medico";
         }
 
         public override string FileName()
         {
-            return "especilaidad_anio_";
+            return "historia_medico_";
         }
     }
 }

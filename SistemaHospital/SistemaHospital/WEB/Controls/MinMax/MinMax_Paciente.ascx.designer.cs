@@ -7,19 +7,19 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace SistemaHospital.WEB.Controls {
+namespace SistemaHospital.WEB.Controls.MinMax {
     
     
-    public partial class EstudioReport {
+    public partial class MinMax_Paciente {
         
         /// <summary>
-        /// Control TextBox_idEspecialidad.
+        /// Control txtcant_Registros.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_idEspecialidad;
+        protected global::System.Web.UI.WebControls.TextBox txtcant_Registros;
         
         /// <summary>
         /// Control mes_ini_ddp.
@@ -58,12 +58,21 @@ namespace SistemaHospital.WEB.Controls {
         protected global::System.Web.UI.WebControls.DropDownList anio_fin_ddp;
         
         /// <summary>
-        /// Control seguimientoList.
+        /// Control Label1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList seguimientoList;
+        protected global::System.Web.UI.WebControls.Label Label1;
+        
+        /// <summary>
+        /// Control orden_radiobutton.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList orden_radiobutton;
     }
 }

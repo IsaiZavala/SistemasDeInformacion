@@ -1,15 +1,15 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="EstudioReport.ascx.cs" Inherits="SistemaHospital.WEB.Controls.EstudioReport" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Avance_estudio.ascx.cs" Inherits="SistemaHospital.WEB.Controls.Avance.Avance_estudio" %>
 
 <div class="row">
     <div class="col-md-4">
         <div class="input-group">
-            <span class="input-group-addon">IdEspecialidad</span>
+            <span class="input-group-addon">IdEstudio</span>&nbsp;&nbsp;
             <asp:TextBox ID="TextBox_idEspecialidad" CssClass="form-control" runat="server"></asp:TextBox>
         </div>
     </div>
     <div class="col-md-4">
         <div class="input-group">
-            <span class="input-group-addon">Desde</span>
+            <span class="input-group-addon">Desde</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:DropDownList ID="mes_ini_ddp" runat="server" CssClass="form-control">
                 <asp:ListItem Value="01">Enero</asp:ListItem>
                 <asp:ListItem Value="02">Febrero</asp:ListItem>
@@ -41,7 +41,7 @@
     </div>
     <div class="col-md-4">
         <div class="input-group">
-            <span class="input-group-addon">Hasta</span>
+            <span class="input-group-addon">Hasta</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:DropDownList ID="mes_fin_ddp" CssClass="form-control" runat="server">
                 <asp:ListItem Value="01">Enero</asp:ListItem>
                 <asp:ListItem Value="02">Febrero</asp:ListItem>

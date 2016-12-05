@@ -130,6 +130,10 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="WEB\Controls\AvanceXEspecialidad.ascx" />
+    <Content Include="WEB\Controls\Avance\Avance_estudio.ascx" />
+    <Content Include="WEB\Controls\Avance\Avance_Medico.ascx" />
+    <Content Include="WEB\Controls\Avance\Avance_Paciente.ascx" />
+    <Content Include="WEB\Controls\Avance\Avance_Tratamientos.ascx" />
     <Content Include="WEB\Controls\ConsultaReport.ascx" />
     <Content Include="WEB\Controls\ConsultasXEspecialidad.ascx" />
     <Content Include="WEB\Controls\EspecialidadReport.ascx" />
@@ -138,6 +142,9 @@
     <Content Include="WEB\Controls\DoctorReport.ascx" />
     <Content Include="WEB\Controls\MaterialConsultaReport.ascx" />
     <Content Include="WEB\Controls\MedicosXEspecialidad.ascx" />
+    <Content Include="WEB\Controls\MinMax\MinMax_Estudio.ascx" />
+    <Content Include="WEB\Controls\MinMax\MinMax_Medicos.ascx" />
+    <Content Include="WEB\Controls\MinMax\MinMax_Paciente.ascx" />
     <Content Include="WEB\Controls\PacienteReport.ascx" />
     <Content Include="WEB\Controls\TratamientoReport.ascx" />
     <Content Include="WEB\Forms\Ejecutivo.aspx" />
@@ -1072,7 +1079,6 @@
     <Content Include="WEB\Resources\plugins\timepicker\bootstrap-timepicker.min.css" />
     <Content Include="WEB\Resources\plugins\timepicker\bootstrap-timepicker.min.js" />
     <Content Include="WEB\Resources\starter.html" />
-    <Content Include="WEB\Controls\VisitasPaciente.ascx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="providers.config" />
@@ -1380,6 +1386,34 @@
     <Compile Include="WEB\Controls\AvanceXEspecialidad.ascx.designer.cs">
       <DependentUpon>AvanceXEspecialidad.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WEB\Controls\Avance\Avance_estudio.ascx.cs">
+      <DependentUpon>Avance_estudio.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Controls\Avance\Avance_estudio.ascx.designer.cs">
+      <DependentUpon>Avance_estudio.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Controls\Avance\Avance_Medico.ascx.cs">
+      <DependentUpon>Avance_Medico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Controls\Avance\Avance_Medico.ascx.designer.cs">
+      <DependentUpon>Avance_Medico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Controls\Avance\Avance_Paciente.ascx.cs">
+      <DependentUpon>Avance_Paciente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Controls\Avance\Avance_Paciente.ascx.designer.cs">
+      <DependentUpon>Avance_Paciente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Controls\Avance\Avance_Tratamientos.ascx.cs">
+      <DependentUpon>Avance_Tratamientos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Controls\Avance\Avance_Tratamientos.ascx.designer.cs">
+      <DependentUpon>Avance_Tratamientos.ascx</DependentUpon>
+    </Compile>
     <Compile Include="WEB\Controls\ConsultaReport.ascx.cs">
       <DependentUpon>ConsultaReport.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1435,6 +1469,27 @@
     </Compile>
     <Compile Include="WEB\Controls\MedicosXEspecialidad.ascx.designer.cs">
       <DependentUpon>MedicosXEspecialidad.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Controls\MinMax\MinMax_Estudio.ascx.cs">
+      <DependentUpon>MinMax_Estudio.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Controls\MinMax\MinMax_Estudio.ascx.designer.cs">
+      <DependentUpon>MinMax_Estudio.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Controls\MinMax\MinMax_Medicos.ascx.cs">
+      <DependentUpon>MinMax_Medicos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Controls\MinMax\MinMax_Medicos.ascx.designer.cs">
+      <DependentUpon>MinMax_Medicos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Controls\MinMax\MinMax_Paciente.ascx.cs">
+      <DependentUpon>MinMax_Paciente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Controls\MinMax\MinMax_Paciente.ascx.designer.cs">
+      <DependentUpon>MinMax_Paciente.ascx</DependentUpon>
     </Compile>
     <Compile Include="WEB\Controls\PacienteReport.ascx.cs">
       <DependentUpon>PacienteReport.ascx</DependentUpon>
@@ -1565,6 +1620,7 @@
     </Compile>
     <Compile Include="WEB\Reports\XSD\DSConsultasXEspecialidad.cs">
       <DependentUpon>DSConsultasXEspecialidad.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="WEB\Reports\XSD\DSConsultasXEspecialidad.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -1620,13 +1676,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>VistasPacientes.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="WEB\Controls\VisitasPaciente.ascx.cs">
-      <DependentUpon>VisitasPaciente.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WEB\Controls\VisitasPaciente.ascx.designer.cs">
-      <DependentUpon>VisitasPaciente.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

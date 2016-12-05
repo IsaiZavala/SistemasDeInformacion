@@ -1,5 +1,4 @@
-﻿using MySql.Data.MySqlClient;
-using SistemaHospital.Tools;
+﻿using SistemaHospital.Tools;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +6,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace SistemaHospital.WEB
+namespace SistemaHospital.WEB.Controls.Avance
 {
-    public partial class VisitasPaciente : HistorialReportControl
+    public partial class Avance_Paciente : HistorialReportControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -18,32 +17,30 @@ namespace SistemaHospital.WEB
 
         public override string Inicio()
         {
-            //return anio_ini_ddp.SelectedValue + "-" + mes_ini_ddp.SelectedValue + "-01";
-            return "2000/01/01";
+            return anio_ini_ddp.SelectedValue + "-" + mes_ini_ddp.SelectedValue + "-01";
         }
 
         public override string Fin()
         {
-            //int anio = Convert.ToInt32(anio_fin_ddp.SelectedValue);
-            //int mes = Convert.ToInt32(mes_fin_ddp.SelectedValue);
+            int anio = Convert.ToInt32(anio_fin_ddp.SelectedValue);
+            int mes = Convert.ToInt32(mes_fin_ddp.SelectedValue);
 
-            //return anio_fin_ddp.SelectedValue + "-" + mes_fin_ddp.SelectedValue + "-" + DateTime.DaysInMonth(anio, mes);
-            return "2016/12/31";
+            return anio_fin_ddp.SelectedValue + "-" + mes_fin_ddp.SelectedValue + "-" + DateTime.DaysInMonth(anio, mes);
         }
 
         public override string GetId()
         {
-            return txt_id.Text.Trim();
+            return TextBox_idEspecialidad.Text;
         }
 
         public override string getTipo()
         {
-            return "Y";
+            return seguimientoList.SelectedValue;
         }
 
         public override string ReportName()
         {
-            return "Reporte de Avance de Especialidad";
+            return "Reporte de visitas del paciente";
         }
 
         public override string StoredProcedureName()
@@ -53,7 +50,7 @@ namespace SistemaHospital.WEB
 
         public override string FileName()
         {
-            return "visitas_paciente_";
+            return "historia_paciente_";
         }
     }
 }
