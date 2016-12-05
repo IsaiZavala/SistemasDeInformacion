@@ -1,13 +1,13 @@
 DELIMITER $$
-CREATE DEFINER=`root`@`%` PROCEDURE `MaterialXConsulta`(in id int(11),in fechaMin DATE, in fechaMax DATE)
+CREATE PROCEDURE `MaterialXConsulta`(IN id INT(11),IN fechaMin DATE, IN fechaMax DATE)
 BEGIN
-select idItem, anio, count(folio) as cantidad
-from (select folio, week(fecha) as anio
-	from Consulta where fecha between fechaMin and fechaMax) as T
-inner join
+SELECT idItem, anio, COUNT(folio) AS cantidad
+FROM (SELECT folio, WEEK(fecha) AS anio
+	FROM Consulta WHERE fecha BETWEEN fechaMin AND fechaMax) AS T
+INNER JOIN
 material_consulta
-on folio= idConsulta
-group by idItem, anio
-having idItem=id;
+ON folio= idConsulta
+GROUP BY idItem, anio
+HAVING idItem=id;
 END$$
 DELIMITER ;

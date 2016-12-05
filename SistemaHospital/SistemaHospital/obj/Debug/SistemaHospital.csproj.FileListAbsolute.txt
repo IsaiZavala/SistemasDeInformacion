@@ -103,3 +103,12 @@ C:\Users\LGerardo\Desktop\ProyectoSI\trunk\SistemaHospital\SistemaHospital\bin\M
 C:\Users\LGerardo\Desktop\ProyectoSI\trunk\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.csprojResolveAssemblyReference.cache
 C:\Users\LGerardo\Desktop\ProyectoSI\trunk\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.dll
 C:\Users\LGerardo\Desktop\ProyectoSI\trunk\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.pdb
+C:\Users\LGerardo\Desktop\Proyecto Sistemas Informacion\trunk\SistemaHospital\SistemaHospital\bin\SistemaHospital.dll.config
+C:\Users\LGerardo\Desktop\Proyecto Sistemas Informacion\trunk\SistemaHospital\SistemaHospital\bin\SistemaHospital.dll
+C:\Users\LGerardo\Desktop\Proyecto Sistemas Informacion\trunk\SistemaHospital\SistemaHospital\bin\SistemaHospital.pdb
+C:\Users\LGerardo\Desktop\Proyecto Sistemas Informacion\trunk\SistemaHospital\SistemaHospital\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LGerardo\Desktop\Proyecto Sistemas Informacion\trunk\SistemaHospital\SistemaHospital\bin\MySql.Data.dll
+C:\Users\LGerardo\Desktop\Proyecto Sistemas Informacion\trunk\SistemaHospital\SistemaHospital\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\LGerardo\Desktop\Proyecto Sistemas Informacion\trunk\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.csprojResolveAssemblyReference.cache
+C:\Users\LGerardo\Desktop\Proyecto Sistemas Informacion\trunk\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.dll
+C:\Users\LGerardo\Desktop\Proyecto Sistemas Informacion\trunk\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.pdb
