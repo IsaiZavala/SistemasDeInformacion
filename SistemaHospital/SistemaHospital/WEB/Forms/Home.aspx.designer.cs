@@ -238,24 +238,6 @@ namespace SistemaHospital.WEB.Forms {
         protected global::SistemaHospital.WEB.Controls.MedicosXEspecialidad rptMedicosXEspecialidad;
         
         /// <summary>
-        /// Control divVisitasPacientes.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divVisitasPacientes;
-        
-        /// <summary>
-        /// Control rptVisitasPacientes.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::SistemaHospital.WEB.Reports.VisitasPaciente rptVisitasPacientes;
-        
-        /// <summary>
         /// Control divMaterialConsulta.
         /// </summary>
         /// <remarks>

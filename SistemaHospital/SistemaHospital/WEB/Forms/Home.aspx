@@ -9,7 +9,7 @@
 <%@ Register TagPrefix="UserControls" TagName="ConsultasXEspecialidad" Src="~/WEB/Controls/ConsultasXEspecialidad.ascx" %>
 <%@ Register TagPrefix="UserControls" TagName="Especialidad_anio" Src="~/WEB/Controls/AvanceXEspecialidad.ascx" %>
 <%@ Register TagPrefix="UserControls" TagName="MedicosXEspecialidad" Src="~/WEB/Controls/MedicosXEspecialidad.ascx" %>
-<%@ Register TagPrefix="UserControls" TagName="VisitasPacientes" Src="~/WEB/Controls/VisitasPaciente.ascx" %>
+<%--<%@ Register TagPrefix="UserControls" TagName="VisitasPacientes" Src="~/WEB/Controls/VisitasPaciente.ascx" %>--%>
 <%@ Register TagPrefix="UserControls" TagName="MaterialConsultaReport" Src="~/WEB/Controls/MaterialConsultaReport.ascx" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
@@ -35,7 +35,7 @@
                     <asp:ListItem Value="rptMedicosXEspecialidad" Text="Médicos por área de especialidad"></asp:ListItem>
                     <asp:ListItem Value="rptPacienteReport" Text="Paciente report"></asp:ListItem>
                     <asp:ListItem Value="rptTratamientoReport" Text="Tratamiento report"></asp:ListItem>
-                    <asp:ListItem Value="rptVisitasPacientes" Text="Visitas por paciente"></asp:ListItem>
+                    <%--<asp:ListItem Value="rptVisitasPacientes" Text="Visitas por paciente"></asp:ListItem>--%>
                 </asp:DropDownList>
             </div>
         </div>
@@ -105,9 +105,9 @@
     <div id="divMedicosXEspecialidad" class="" runat="server">
         <UserControls:MedicosXEspecialidad runat="server" ID="rptMedicosXEspecialidad" />
     </div>
-    <div id="divVisitasPacientes" class="" runat="server">
+    <%--<div id="divVisitasPacientes" class="" runat="server">
         <UserControls:VisitasPacientes runat="server" ID="rptVisitasPacientes" />
-    </div>
+    </div>--%>
     <div id="divMaterialConsulta" class="" runat="server">
         <UserControls:MaterialConsultaReport runat="server" ID="rptMaterialConsulta" />
     </div>

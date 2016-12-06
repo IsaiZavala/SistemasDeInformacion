@@ -34,7 +34,7 @@ namespace SistemaHospital.WEB.Forms
             lstReportes.Add(rptMedicosXEspecialidad);
             lstReportes.Add(rptPacienteReport);
             lstReportes.Add(rptTratamientoReport);
-            lstReportes.Add(rptVisitasPacientes);
+            // lstReportes.Add(rptVisitasPacientes);
         }
 
         protected void ddlReporteASP_SelectedIndexChanged(object sender, EventArgs e)
@@ -76,9 +76,9 @@ namespace SistemaHospital.WEB.Forms
                 case "rptMedicosXEspecialidad":
                     LoadMedicosXEspecialidad();
                     break;
-                case "rptVisitasPacientes":
-                    LoadVisitasPacientes();
-                    break;
+                //case "rptVisitasPacientes":
+                //    LoadVisitasPacientes();
+                //    break;
                 case "rptMaterialConsulta":
                     LoadMaterialConsulta();
                     break;
@@ -97,7 +97,7 @@ namespace SistemaHospital.WEB.Forms
             rptConsultasXEspecialidad.Visible = false;
             rptEspecialidad_anio.Visible = false;
             rptMedicosXEspecialidad.Visible = false;
-            rptVisitasPacientes.Visible = false;
+            // rptVisitasPacientes.Visible = false;
             rptMaterialConsulta.Visible = false;
         }
 
@@ -107,11 +107,11 @@ namespace SistemaHospital.WEB.Forms
             SetTituloFormulario("Reporte de medicamentos por consulta");
         }
 
-        private void LoadVisitasPacientes()
-        {
-            rptVisitasPacientes.Visible = true;
-            SetTituloFormulario("Reporte de visitas de pacientes");
-        }
+        //private void LoadVisitasPacientes()
+        //{
+        //    rptVisitasPacientes.Visible = true;
+        //    SetTituloFormulario("Reporte de visitas de pacientes");
+        //}
 
         private void LoadMedicosXEspecialidad()
         {
