@@ -71,20 +71,20 @@
                 </asp:DropDownList>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3" runat="server" visible="false">
             <div class="input-group">
                 <span class="input-group-addon">Fecha inicial</span>
                 <input type="text" runat="server" id="FechaInicial" class="form-control" autocomplete="off">
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3" runat="server" visible="false">
             <div class="input-group">
                 <span class="input-group-addon">Fecha final</span>
                 <input type="text" runat="server" id="FechaFinal" class="form-control" autocomplete="off">
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row" runat="server" visible="false">
         <div class="col-md-4"></div>
         <div class="col-md-3">
             <div class="input-group spinner">
