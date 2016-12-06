@@ -21,6 +21,13 @@
 <%@ Register Src="~/WEB/Controls/MinMax/MinMax_Medicos.ascx" TagPrefix="UserControls" TagName="MinMax_Medicos" %>
 <%@ Register Src="~/WEB/Controls/MinMax/MinMax_Paciente.ascx" TagPrefix="UserControls" TagName="MinMax_Paciente" %>
 
+<%@ Register Src="~/WEB/Controls/Avance/Avance_Item_Cantidad.ascx" TagPrefix="UserControls" TagName="Avance_Item_Cantidad" %>
+<%@ Register Src="~/WEB/Controls/Avance/Avance_Item_Ganancia.ascx" TagPrefix="UserControls" TagName="Avance_Item_Ganancia" %>
+<%@ Register Src="~/WEB/Controls/Avance/Avance_Proveedor_Ganancia.ascx" TagPrefix="UserControls" TagName="Avance_Proveedor_Ganancia" %>
+<%@ Register Src="~/WEB/Controls/MinMax/MinMax_Item_Cantidad.ascx" TagPrefix="UserControls" TagName="MinMax_Item_Cantidad" %>
+<%@ Register Src="~/WEB/Controls/MinMax/MinMax_Proveedor_Ganancia.ascx" TagPrefix="UserControls" TagName="MinMax_Proveedor_Ganancia" %>
+<%@ Register Src="~/WEB/Controls/MinMax/MinMax_Item_Ganancia.ascx" TagPrefix="UserControls" TagName="MinMax_Item_Ganancia" %>
+
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     
@@ -54,6 +61,13 @@
                     <asp:ListItem Value="rptMinMax_Estudio" Text="Min max estudio"></asp:ListItem>
                     <asp:ListItem Value="rptMinMax_Medicos" Text="Min max médicos"></asp:ListItem>
                     <asp:ListItem Value="rptMinMax_Paciente" Text="Min max paciente"></asp:ListItem>
+
+                    <asp:ListItem Value="rptAvance_Item_Cantidad" Text="Avance item cantidad"></asp:ListItem>
+                    <asp:ListItem Value="rptAvance_Item_Ganancia" Text="Avance item ganancia"></asp:ListItem>
+                    <asp:ListItem Value="rptAvance_Proveedor_Ganancia" Text="Avance proveedor ganancia"></asp:ListItem>
+                    <asp:ListItem Value="rptMinMax_Item_Cantidad" Text="Min max item cantidad"></asp:ListItem>
+                    <asp:ListItem Value="rptMinMax_Item_Ganancia" Text="Min max item ganancia"></asp:ListItem>
+                    <asp:ListItem Value="rptMinMax_Proveedor_Ganancia" Text="Min max proveedor ganancia"></asp:ListItem>
                 </asp:DropDownList>
             </div>
         </div>
@@ -149,6 +163,24 @@
     </div>
     <div>
         <UserControls:MinMax_Paciente runat="server" ID="rptMinMax_Paciente" />
+    </div>
+    <div>
+        <UserControls:Avance_Item_Cantidad runat="server" id="rptAvance_Item_Cantidad" />
+    </div>
+    <div>
+        <UserControls:Avance_Item_Ganancia runat="server" id="rptAvance_Item_Ganancia" />
+    </div>
+    <div>
+        <UserControls:Avance_Proveedor_Ganancia runat="server" id="rptAvance_Proveedor_Ganancia" />
+    </div>
+    <div>
+        <UserControls:MinMax_Item_Cantidad runat="server" id="rptMinMax_Item_Cantidad" />
+    </div>
+    <div>
+        <UserControls:MinMax_Item_Ganancia runat="server" id="rptMinMax_Item_Ganancia" />
+    </div>
+    <div>
+        <UserControls:MinMax_Proveedor_Ganancia runat="server" id="rptMinMax_Proveedor_Ganancia" />
     </div>
     <br /><br />
     <div class="row">

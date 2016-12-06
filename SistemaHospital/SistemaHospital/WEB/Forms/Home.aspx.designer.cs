@@ -319,6 +319,60 @@ namespace SistemaHospital.WEB.Forms {
         protected global::SistemaHospital.WEB.Controls.MinMax.MinMax_Paciente rptMinMax_Paciente;
         
         /// <summary>
+        /// Control rptAvance_Item_Cantidad.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::SistemaHospital.WEB.Controls.Avance.Avance_Item_Cantidad rptAvance_Item_Cantidad;
+        
+        /// <summary>
+        /// Control rptAvance_Item_Ganancia.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::SistemaHospital.WEB.Controls.MinMax.Avance_Item_Ganancia rptAvance_Item_Ganancia;
+        
+        /// <summary>
+        /// Control rptAvance_Proveedor_Ganancia.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::SistemaHospital.WEB.Controls.Avance.Avance_Proveedor_Ganancia rptAvance_Proveedor_Ganancia;
+        
+        /// <summary>
+        /// Control rptMinMax_Item_Cantidad.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::SistemaHospital.WEB.Controls.MinMax.MinMax_Item_Cantidad rptMinMax_Item_Cantidad;
+        
+        /// <summary>
+        /// Control rptMinMax_Item_Ganancia.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::SistemaHospital.WEB.Controls.MinMax.MinMax_Item_Ganancia rptMinMax_Item_Ganancia;
+        
+        /// <summary>
+        /// Control rptMinMax_Proveedor_Ganancia.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::SistemaHospital.WEB.Controls.MinMax.MinMax_Proveedor_Ganancia rptMinMax_Proveedor_Ganancia;
+        
+        /// <summary>
         /// Control btnGenerarReporte.
         /// </summary>
         /// <remarks>

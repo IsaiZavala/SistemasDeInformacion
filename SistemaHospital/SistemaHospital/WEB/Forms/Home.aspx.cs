@@ -80,6 +80,24 @@ namespace SistemaHospital.WEB.Forms
                     break;
                 case "rptMinMax_Paciente":
                     rptMinMax_Paciente.Visible = true;
+                break;
+                case "rptAvance_Item_Cantidad":
+                    rptAvance_Item_Cantidad.Visible = true;
+                    break;
+                case "rptAvance_Item_Ganancia":
+                    rptAvance_Item_Ganancia.Visible = true;
+                    break;
+                case "rptAvance_Proveedor_Ganancia":
+                    rptAvance_Proveedor_Ganancia.Visible = true;
+                    break;
+                case "rptMinMax_Item_Cantidad":
+                    rptMinMax_Item_Cantidad.Visible = true;
+                    break;
+                case "rptMinMax_Item_Ganancia":
+                    rptMinMax_Item_Ganancia.Visible = true;
+                    break;
+                case "rptMinMax_Proveedor_Ganancia":
+                    rptMinMax_Proveedor_Ganancia.Visible = true;
                     break;
             }
         }

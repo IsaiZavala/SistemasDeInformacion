@@ -4,12 +4,12 @@
 <div class="row">
     <div class="col-md-4">
         <div class="input-group">
-            <span class="input-group-addon">Cantidad de registros&nbsp;&nbsp;&nbsp; </span>&nbsp;<asp:TextBox ID="txtcant_Registros" CssClass="form-control" runat="server"></asp:TextBox>
+            <span class="input-group-addon">Cantidad de registros </span><asp:TextBox ID="txtcant_Registros" CssClass="form-control" runat="server"></asp:TextBox>
         </div>
     </div>
     <div class="col-md-4">
         <div class="input-group">
-            <span class="input-group-addon">Desde&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+            <span class="input-group-addon">Desde </span>
             <asp:DropDownList ID="mes_ini_ddp" CssClass="form-control" runat="server">
                 <asp:ListItem Value="01">Enero</asp:ListItem>
                 <asp:ListItem Value="02">Febrero</asp:ListItem>
@@ -41,7 +41,7 @@
     </div>
     <div class="col-md-4">
         <div class="input-group">
-            <span class="input-group-addon">Hasta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&nbsp;<asp:DropDownList ID="mes_fin_ddp" CssClass="form-control" runat="server">
+            <span class="input-group-addon">Hasta </span><asp:DropDownList ID="mes_fin_ddp" CssClass="form-control" runat="server">
                 <asp:ListItem Value="01">Enero</asp:ListItem>
                 <asp:ListItem Value="02">Febrero</asp:ListItem>
                 <asp:ListItem Value="03">Marzo</asp:ListItem>

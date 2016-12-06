@@ -147,8 +147,10 @@
     <Content Include="WEB\Controls\Avance\Avance_Item_Ganancia.ascx" />
     <Content Include="WEB\Controls\MinMax\MinMax_Estudio.ascx" />
     <Content Include="WEB\Controls\MinMax\MinMax_Item_Cantidad.ascx" />
+    <Content Include="WEB\Controls\MinMax\MinMax_Item_Ganancia.ascx" />
     <Content Include="WEB\Controls\MinMax\MinMax_Medicos.ascx" />
     <Content Include="WEB\Controls\MinMax\MinMax_Paciente.ascx" />
+    <Content Include="WEB\Controls\MinMax\MinMax_Proveedor_Ganancia.ascx" />
     <Content Include="WEB\Controls\PacienteReport.ascx" />
     <Content Include="WEB\Controls\TratamientoReport.ascx" />
     <Content Include="WEB\Controls\VisitasPacientes.ascx" />
@@ -1510,6 +1512,13 @@
     <Compile Include="WEB\Controls\MinMax\MinMax_Item_Cantidad.ascx.designer.cs">
       <DependentUpon>MinMax_Item_Cantidad.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WEB\Controls\MinMax\MinMax_Item_Ganancia.ascx.cs">
+      <DependentUpon>MinMax_Item_Ganancia.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Controls\MinMax\MinMax_Item_Ganancia.ascx.designer.cs">
+      <DependentUpon>MinMax_Item_Ganancia.ascx</DependentUpon>
+    </Compile>
     <Compile Include="WEB\Controls\MinMax\MinMax_Medicos.ascx.cs">
       <DependentUpon>MinMax_Medicos.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1523,6 +1532,13 @@
     </Compile>
     <Compile Include="WEB\Controls\MinMax\MinMax_Paciente.ascx.designer.cs">
       <DependentUpon>MinMax_Paciente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Controls\MinMax\MinMax_Proveedor_Ganancia.ascx.cs">
+      <DependentUpon>MinMax_Proveedor_Ganancia.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Controls\MinMax\MinMax_Proveedor_Ganancia.ascx.designer.cs">
+      <DependentUpon>MinMax_Proveedor_Ganancia.ascx</DependentUpon>
     </Compile>
     <Compile Include="WEB\Controls\PacienteReport.ascx.cs">
       <DependentUpon>PacienteReport.ascx</DependentUpon>
@@ -1660,7 +1676,6 @@
     </Compile>
     <Compile Include="WEB\Reports\XSD\DSConsultasXEspecialidad.cs">
       <DependentUpon>DSConsultasXEspecialidad.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="WEB\Reports\XSD\DSConsultasXEspecialidad.Designer.cs">
       <AutoGen>True</AutoGen>
