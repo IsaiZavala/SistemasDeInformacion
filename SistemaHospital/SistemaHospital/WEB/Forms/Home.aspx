@@ -12,6 +12,16 @@
 <%--<%@ Register TagPrefix="UserControls" TagName="VisitasPacientes" Src="~/WEB/Controls/VisitasPaciente.ascx" %>--%>
 <%@ Register TagPrefix="UserControls" TagName="MaterialConsultaReport" Src="~/WEB/Controls/MaterialConsultaReport.ascx" %>
 
+<%@ Register TagPrefix="UserControls" TagName="Avance_estudio" Src="~/WEB/Controls/Avance/Avance_estudio.ascx" %>
+<%@ Register Src="~/WEB/Controls/Avance/Avance_Medico.ascx" TagPrefix="UserControls" TagName="Avance_Medico" %>
+<%@ Register Src="~/WEB/Controls/Avance/Avance_Paciente.ascx" TagPrefix="UserControls" TagName="Avance_Paciente" %>
+<%@ Register Src="~/WEB/Controls/Avance/Avance_Tratamientos.ascx" TagPrefix="UserControls" TagName="Avance_Tratamientos" %>
+
+<%@ Register Src="~/WEB/Controls/MinMax/MinMax_Estudio.ascx" TagPrefix="UserControls" TagName="MinMax_Estudio" %>
+<%@ Register Src="~/WEB/Controls/MinMax/MinMax_Medicos.ascx" TagPrefix="UserControls" TagName="MinMax_Medicos" %>
+<%@ Register Src="~/WEB/Controls/MinMax/MinMax_Paciente.ascx" TagPrefix="UserControls" TagName="MinMax_Paciente" %>
+
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     
 </asp:Content>
@@ -36,6 +46,14 @@
                     <asp:ListItem Value="rptPacienteReport" Text="Paciente report"></asp:ListItem>
                     <asp:ListItem Value="rptTratamientoReport" Text="Tratamiento report"></asp:ListItem>
                     <%--<asp:ListItem Value="rptVisitasPacientes" Text="Visitas por paciente"></asp:ListItem>--%>
+                    <asp:ListItem Value="rptAvance_estudio" Text="Avance estudio"></asp:ListItem>
+                    <asp:ListItem Value="rptAvance_Medico" Text="Avance medico"></asp:ListItem>
+                    <asp:ListItem Value="rptAvance_Paciente" Text="Avance paciente"></asp:ListItem>
+                    <asp:ListItem Value="rptAvance_Tratamientos" Text="Avance tratamientos"></asp:ListItem>
+
+                    <asp:ListItem Value="rptMinMax_Estudio" Text="Min max estudio"></asp:ListItem>
+                    <asp:ListItem Value="rptMinMax_Medicos" Text="Min max médicos"></asp:ListItem>
+                    <asp:ListItem Value="rptMinMax_Paciente" Text="Min max paciente"></asp:ListItem>
                 </asp:DropDownList>
             </div>
         </div>
@@ -110,6 +128,27 @@
     </div>--%>
     <div id="divMaterialConsulta" class="" runat="server">
         <UserControls:MaterialConsultaReport runat="server" ID="rptMaterialConsulta" />
+    </div>
+    <div>
+        <UserControls:Avance_estudio runat="server" ID="rptAvance_estudio" />
+    </div>
+    <div>
+        <UserControls:Avance_Medico runat="server" ID="rptAvance_Medico" />
+    </div>
+    <div>
+        <UserControls:Avance_Paciente runat="server" ID="rptAvance_Paciente" />
+    </div>
+    <div>
+        <UserControls:Avance_Tratamientos runat="server" ID="rptAvance_Tratamientos" />
+    </div>
+    <div>
+        <UserControls:MinMax_Estudio runat="server" ID="rptMinMax_Estudio" />
+    </div>
+    <div>
+        <UserControls:MinMax_Medicos runat="server" ID="rptMinMax_Medicos" />
+    </div>
+    <div>
+        <UserControls:MinMax_Paciente runat="server" ID="rptMinMax_Paciente" />
     </div>
     <br /><br />
     <div class="row">

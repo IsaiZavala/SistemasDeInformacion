@@ -10,31 +10,12 @@ namespace SistemaHospital.WEB.Forms
 {
     public partial class Home : System.Web.UI.Page
     {
-        private static IList<ReportControl> lstReportes = new List<ReportControl>();
-
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                CargaListaReportes();
                 OcultaReportes();
             }
-        }
-
-        private void CargaListaReportes()
-        {
-            lstReportes.Add(rptConsultaReport);
-            lstReportes.Add(rptConsultasXEspecialidad);
-            lstReportes.Add(rptDoctorReport);
-            lstReportes.Add(rptEspecialidadReport);
-            lstReportes.Add(rptEspecialidad_anio);
-            lstReportes.Add(rptEstudioReport);
-            lstReportes.Add(rptInventoryReport);
-            lstReportes.Add(rptMaterialConsulta);
-            lstReportes.Add(rptMedicosXEspecialidad);
-            lstReportes.Add(rptPacienteReport);
-            lstReportes.Add(rptTratamientoReport);
-            // lstReportes.Add(rptVisitasPacientes);
         }
 
         protected void ddlReporteASP_SelectedIndexChanged(object sender, EventArgs e)
@@ -76,29 +57,42 @@ namespace SistemaHospital.WEB.Forms
                 case "rptMedicosXEspecialidad":
                     LoadMedicosXEspecialidad();
                     break;
-                //case "rptVisitasPacientes":
-                //    LoadVisitasPacientes();
-                //    break;
                 case "rptMaterialConsulta":
                     LoadMaterialConsulta();
+                break;
+                case "rptAvance_estudio":
+                    rptAvance_estudio.Visible = true;
+                break;
+                case "rptAvance_Medico":
+                    rptAvance_Medico.Visible = true;
+                break;
+                case "rptAvance_Paciente":
+                    rptAvance_Paciente.Visible = true;
+                    break;
+                case "rptAvance_Tratamientos":
+                    rptAvance_Tratamientos.Visible = true;
+                    break;
+                case "rptMinMax_Estudio":
+                    rptMinMax_Estudio.Visible = true;
+                    break;
+                case "rptMinMax_Medicos":
+                    rptMinMax_Medicos.Visible = true;
+                    break;
+                case "rptMinMax_Paciente":
+                    rptMinMax_Paciente.Visible = true;
                     break;
             }
         }
 
         private void OcultaReportes()
         {
-            rptInventoryReport.Visible = false;
-            rptPacienteReport.Visible = false;
-            rptEspecialidadReport.Visible = false;
-            rptEstudioReport.Visible = false;
-            rptDoctorReport.Visible = false;
-            rptTratamientoReport.Visible = false;
-            rptConsultaReport.Visible = false;
-            rptConsultasXEspecialidad.Visible = false;
-            rptEspecialidad_anio.Visible = false;
-            rptMedicosXEspecialidad.Visible = false;
-            // rptVisitasPacientes.Visible = false;
-            rptMaterialConsulta.Visible = false;
+            ContentPlaceHolder cph = Page.Master.FindControl("ContentPlaceHolder1") as ContentPlaceHolder;
+            List<ReportControl> lstReports = FindAllReports(cph.Controls);
+
+            foreach (ReportControl itemControl in lstReports)
+            {
+                itemControl.Visible = false;
+            }
         }
 
         private void LoadMaterialConsulta()

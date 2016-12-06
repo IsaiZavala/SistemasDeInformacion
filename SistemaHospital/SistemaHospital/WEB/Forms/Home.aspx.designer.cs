@@ -256,6 +256,69 @@ namespace SistemaHospital.WEB.Forms {
         protected global::SistemaHospital.WEB.Controls.MaterialConsultaReport rptMaterialConsulta;
         
         /// <summary>
+        /// Control rptAvance_estudio.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::SistemaHospital.WEB.Controls.Avance.Avance_estudio rptAvance_estudio;
+        
+        /// <summary>
+        /// Control rptAvance_Medico.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::SistemaHospital.WEB.Controls.Avance.Avance_Medico rptAvance_Medico;
+        
+        /// <summary>
+        /// Control rptAvance_Paciente.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::SistemaHospital.WEB.Controls.Avance.Avance_Paciente rptAvance_Paciente;
+        
+        /// <summary>
+        /// Control rptAvance_Tratamientos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::SistemaHospital.WEB.Controls.Avance.Avance_Tratamientos rptAvance_Tratamientos;
+        
+        /// <summary>
+        /// Control rptMinMax_Estudio.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::SistemaHospital.WEB.Controls.MinMax.MinMax_Estudio rptMinMax_Estudio;
+        
+        /// <summary>
+        /// Control rptMinMax_Medicos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::SistemaHospital.WEB.Controls.MinMax.MinMax_Medicos rptMinMax_Medicos;
+        
+        /// <summary>
+        /// Control rptMinMax_Paciente.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::SistemaHospital.WEB.Controls.MinMax.MinMax_Paciente rptMinMax_Paciente;
+        
+        /// <summary>
         /// Control btnGenerarReporte.
         /// </summary>
         /// <remarks>
