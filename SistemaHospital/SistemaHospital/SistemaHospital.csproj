@@ -131,8 +131,10 @@
     </Content>
     <Content Include="WEB\Controls\AvanceXEspecialidad.ascx" />
     <Content Include="WEB\Controls\Avance\Avance_estudio.ascx" />
+    <Content Include="WEB\Controls\Avance\Avance_Item_Cantidad.ascx" />
     <Content Include="WEB\Controls\Avance\Avance_Medico.ascx" />
     <Content Include="WEB\Controls\Avance\Avance_Paciente.ascx" />
+    <Content Include="WEB\Controls\Avance\Avance_Proveedor_Ganancia.ascx" />
     <Content Include="WEB\Controls\Avance\Avance_Tratamientos.ascx" />
     <Content Include="WEB\Controls\ConsultaReport.ascx" />
     <Content Include="WEB\Controls\ConsultasXEspecialidad.ascx" />
@@ -142,11 +144,14 @@
     <Content Include="WEB\Controls\DoctorReport.ascx" />
     <Content Include="WEB\Controls\MaterialConsultaReport.ascx" />
     <Content Include="WEB\Controls\MedicosXEspecialidad.ascx" />
+    <Content Include="WEB\Controls\Avance\Avance_Item_Ganancia.ascx" />
     <Content Include="WEB\Controls\MinMax\MinMax_Estudio.ascx" />
+    <Content Include="WEB\Controls\MinMax\MinMax_Item_Cantidad.ascx" />
     <Content Include="WEB\Controls\MinMax\MinMax_Medicos.ascx" />
     <Content Include="WEB\Controls\MinMax\MinMax_Paciente.ascx" />
     <Content Include="WEB\Controls\PacienteReport.ascx" />
     <Content Include="WEB\Controls\TratamientoReport.ascx" />
+    <Content Include="WEB\Controls\VisitasPacientes.ascx" />
     <Content Include="WEB\Forms\Ejecutivo.aspx" />
     <Content Include="WEB\Forms\Home.aspx" />
     <Content Include="WEB\Forms\Login.aspx" />
@@ -1393,6 +1398,13 @@
     <Compile Include="WEB\Controls\Avance\Avance_estudio.ascx.designer.cs">
       <DependentUpon>Avance_estudio.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WEB\Controls\Avance\Avance_Item_Cantidad.ascx.cs">
+      <DependentUpon>Avance_Item_Cantidad.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Controls\Avance\Avance_Item_Cantidad.ascx.designer.cs">
+      <DependentUpon>Avance_Item_Cantidad.ascx</DependentUpon>
+    </Compile>
     <Compile Include="WEB\Controls\Avance\Avance_Medico.ascx.cs">
       <DependentUpon>Avance_Medico.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1406,6 +1418,13 @@
     </Compile>
     <Compile Include="WEB\Controls\Avance\Avance_Paciente.ascx.designer.cs">
       <DependentUpon>Avance_Paciente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Controls\Avance\Avance_Proveedor_Ganancia.ascx.cs">
+      <DependentUpon>Avance_Proveedor_Ganancia.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Controls\Avance\Avance_Proveedor_Ganancia.ascx.designer.cs">
+      <DependentUpon>Avance_Proveedor_Ganancia.ascx</DependentUpon>
     </Compile>
     <Compile Include="WEB\Controls\Avance\Avance_Tratamientos.ascx.cs">
       <DependentUpon>Avance_Tratamientos.ascx</DependentUpon>
@@ -1470,12 +1489,26 @@
     <Compile Include="WEB\Controls\MedicosXEspecialidad.ascx.designer.cs">
       <DependentUpon>MedicosXEspecialidad.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WEB\Controls\Avance\Avance_Item_Ganancia.ascx.cs">
+      <DependentUpon>Avance_Item_Ganancia.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Controls\Avance\Avance_Item_Ganancia.ascx.designer.cs">
+      <DependentUpon>Avance_Item_Ganancia.ascx</DependentUpon>
+    </Compile>
     <Compile Include="WEB\Controls\MinMax\MinMax_Estudio.ascx.cs">
       <DependentUpon>MinMax_Estudio.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="WEB\Controls\MinMax\MinMax_Estudio.ascx.designer.cs">
       <DependentUpon>MinMax_Estudio.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Controls\MinMax\MinMax_Item_Cantidad.ascx.cs">
+      <DependentUpon>MinMax_Item_Cantidad.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Controls\MinMax\MinMax_Item_Cantidad.ascx.designer.cs">
+      <DependentUpon>MinMax_Item_Cantidad.ascx</DependentUpon>
     </Compile>
     <Compile Include="WEB\Controls\MinMax\MinMax_Medicos.ascx.cs">
       <DependentUpon>MinMax_Medicos.ascx</DependentUpon>
@@ -1504,6 +1537,13 @@
     </Compile>
     <Compile Include="WEB\Controls\TratamientoReport.ascx.designer.cs">
       <DependentUpon>TratamientoReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Controls\VisitasPacientes.ascx.cs">
+      <DependentUpon>VisitasPacientes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Controls\VisitasPacientes.ascx.designer.cs">
+      <DependentUpon>VisitasPacientes.ascx</DependentUpon>
     </Compile>
     <Compile Include="WEB\Forms\Ejecutivo.aspx.cs">
       <DependentUpon>Ejecutivo.aspx</DependentUpon>
@@ -1620,6 +1660,7 @@
     </Compile>
     <Compile Include="WEB\Reports\XSD\DSConsultasXEspecialidad.cs">
       <DependentUpon>DSConsultasXEspecialidad.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="WEB\Reports\XSD\DSConsultasXEspecialidad.Designer.cs">
       <AutoGen>True</AutoGen>
