@@ -19,7 +19,7 @@ namespace SistemaHospital.WEB.Controls.MinMax {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textBox_Item;
+        protected global::System.Web.UI.WebControls.DropDownList textBox_Item;
         
         /// <summary>
         /// Control txtcant_Registros.

@@ -13,7 +13,10 @@ namespace SistemaHospital.WEB.Controls.MinMax
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            List<ListItem> l = DatosCombo("Select idItem, descripcion from Inventario;");
 
+            foreach (ListItem i in l)
+                textBox_Item.Items.Add(i);
         }
 
         public override string StoredProcedureName()

@@ -13,7 +13,10 @@ namespace SistemaHospital.WEB.Controls
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            List<ListItem> l = DatosCombo("Select * from Especialidad;");
 
+            foreach (ListItem i in l)
+                TextBox_idEspecialidad.Items.Add(i);
         }
 
         public override string Inicio()

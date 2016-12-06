@@ -112,3 +112,11 @@ C:\Users\LGerardo\Desktop\Proyecto Sistemas Informacion\trunk\SistemaHospital\Si
 C:\Users\LGerardo\Desktop\Proyecto Sistemas Informacion\trunk\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.csprojResolveAssemblyReference.cache
 C:\Users\LGerardo\Desktop\Proyecto Sistemas Informacion\trunk\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.dll
 C:\Users\LGerardo\Desktop\Proyecto Sistemas Informacion\trunk\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.pdb
+C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.csprojResolveAssemblyReference.cache
+C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.dll
+C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\SistemaHospital.dll
+C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\SistemaHospital.pdb
+C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\MySql.Data.dll
+C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\Fer\Desktop\Sistemas de informacion\trunk\SistemaHospital\SistemaHospital\obj\Debug\SistemaHospital.pdb

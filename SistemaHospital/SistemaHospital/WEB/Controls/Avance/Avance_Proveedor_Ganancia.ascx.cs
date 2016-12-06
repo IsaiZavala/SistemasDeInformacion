@@ -13,7 +13,15 @@ namespace SistemaHospital.WEB.Controls.Avance
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            List<ListItem> l = DatosCombo("Select idProveedor,nombre from Proveedor;");
 
+            foreach (ListItem i in l)
+                TextBox_idEspecialidad.Items.Add(i);
+
+            l = DatosCombo("Select idItem, descripcion from Inventario;");
+
+            foreach (ListItem i in l)
+                Textbox_Item.Items.Add(i);
         }
 
         public override string Inicio()
@@ -31,7 +39,7 @@ namespace SistemaHospital.WEB.Controls.Avance
 
         public override string GetId()
         {
-            return TextBox_idEspecialidad.Text;
+            return TextBox_idEspecialidad.SelectedValue;
         }
 
         public override string getTipo()
@@ -80,7 +88,7 @@ namespace SistemaHospital.WEB.Controls.Avance
 
         public string idItem()
         {
-            return Textbox_Item.Text;
+            return Textbox_Item.SelectedValue;
         }
     }
 }

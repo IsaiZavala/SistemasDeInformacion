@@ -1676,6 +1676,7 @@
     </Compile>
     <Compile Include="WEB\Reports\XSD\DSConsultasXEspecialidad.cs">
       <DependentUpon>DSConsultasXEspecialidad.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="WEB\Reports\XSD\DSConsultasXEspecialidad.Designer.cs">
       <AutoGen>True</AutoGen>

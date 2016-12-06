@@ -4,11 +4,13 @@
     <div class="col-md-4">
         <div class="input-group">
             <span class="input-group-addon">IdProveedor</span>
-            <asp:TextBox ID="TextBox_idEspecialidad" CssClass="form-control" runat="server"></asp:TextBox>
+            <asp:DropDownList ID="TextBox_idEspecialidad" runat="server" Width="164px">
+            </asp:DropDownList>
         </div>
         <div class="input-group">
             <span class="input-group-addon">IdItem</span>
-            <asp:TextBox ID="Textbox_Item" CssClass="form-control" runat="server"></asp:TextBox>
+            <asp:DropDownList ID="Textbox_Item" runat="server" Width="164px">
+            </asp:DropDownList>
         </div>
     </div>
     <div class="col-md-4">

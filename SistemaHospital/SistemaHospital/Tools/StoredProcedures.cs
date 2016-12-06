@@ -120,6 +120,38 @@ namespace SistemaHospital.Tools
             return dt;
         }
 
+        public static DataTable query(string query)
+        {
+            DataTable dtDatos2 = new DataTable();
+            MySqlConnection cn = null;
+
+            try
+            {
+                // Create the SQL connection.
+                cn = new MySqlConnection(Tools.AppSettings.ConnectionString);
+                cn.Open();
+
+                MySqlDataAdapter mdaDatos2 = new MySqlDataAdapter(query, cn);
+                mdaDatos2.Fill(dtDatos2);
+                
+            }
+            catch (Exception e)
+            {
+                // Tools.UnhandledException ex = new Tools.UnhandledException(e.Message, e);
+                throw e;
+            }
+            finally
+            {
+                if (cn != null)
+                {
+                    cn.Close();
+                    cn.Dispose();
+                }
+            }
+
+            return dtDatos2;
+        }
+
         public static DataSet SP_ReporteDesemepenio(string strNameProcedure, CommandType p_CommandType, MySqlParameter [] arrParams)
         {
             try

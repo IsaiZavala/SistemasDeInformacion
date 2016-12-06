@@ -7,6 +7,7 @@ using CrystalDecisions.CrystalReports.Engine;
 using CrystalDecisions.Shared;
 using MySql.Data.MySqlClient;
 using System.Data;
+using System.Web.UI.WebControls;
 
 
 namespace SistemaHospital.Tools
@@ -79,6 +80,18 @@ namespace SistemaHospital.Tools
             object [] objParams = new object[1];
             objParams[0] = new object[]{"CompanyName", "Sistema de hospital"};
             return objParams;
+        }
+
+        public List<ListItem> DatosCombo(string query)
+        {
+            List<ListItem> lista = new List<ListItem>();
+
+            DataTable dtDatos = StoredProcedures.query(query);
+
+            foreach (DataRow r in dtDatos.Rows)
+                lista.Add(new ListItem(r[1].ToString(),r[0].ToString()));
+
+            return lista;
         }
     }
 }

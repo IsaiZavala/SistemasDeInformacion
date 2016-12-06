@@ -5,7 +5,8 @@
     <div class="col-md-4">
         <div class="input-group">
             <span class="input-group-addon">IdItem</span>
-            <asp:TextBox ID="textBox_Item" CssClass="form-control" runat="server"></asp:TextBox>
+            <asp:DropDownList ID="textBox_Item" runat="server" Width="164px">
+            </asp:DropDownList>
         </div>
         <div class="input-group">
             <span class="input-group-addon">Cantidad de registros</span>
