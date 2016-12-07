@@ -12,7 +12,10 @@ namespace SistemaHospital.WEB.Controls.Avance
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                this.mes_fin_ddp.SelectedValue = "12";
+            }
         }
 
         public override string Inicio()

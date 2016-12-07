@@ -5,7 +5,7 @@
     <div class="col-md-4">
         <div class="input-group">
             <span class="input-group-addon">IdEspecialidad</span>
-            <asp:DropDownList ID="TextBox_idEspecialidad" runat="server" Width="164px">
+            <asp:DropDownList ID="TextBox_idEspecialidad" runat="server" CssClass="form-control">
             </asp:DropDownList>
         </div>
     </div>

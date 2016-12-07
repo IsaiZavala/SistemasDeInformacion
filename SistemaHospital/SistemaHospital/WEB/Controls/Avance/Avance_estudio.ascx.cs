@@ -12,10 +12,15 @@ namespace SistemaHospital.WEB.Controls.Avance
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<ListItem> l = DatosCombo("Select * from Estudio;");
+            if (!IsPostBack)
+            {
+                List<ListItem> l = DatosCombo("Select * from Estudio;");
 
-            foreach (ListItem i in l)
-                TextBox_idEspecialidad.Items.Add(i);
+                foreach (ListItem i in l)
+                    TextBox_idEspecialidad.Items.Add(i);
+
+                this.mes_fin_ddp.SelectedValue = "12";
+            }
         }
 
         public override string Inicio()
